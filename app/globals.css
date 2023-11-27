@@ -4,11 +4,31 @@
 
 @import url("../styles/theme.css");
 
+html,
 body {
-  font-family: "Inter", sans-serif;
+  font-family: var(--font-fira-sans), sans-serif;
+  background-color: #e2995f;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--font-oswald), sans-serif;
 }
 
 @layer utilities {
+  .icon {
+    fill: transparent;
+    stroke: rgba(23, 61, 51, 1);
+  }
+  .icon:hover {
+    fill: transparent;
+    stroke: rgba(23, 61, 51, 1);
+    cursor: pointer;
+  }
+
   .flex-center {
     @apply flex justify-center items-center;
   }
