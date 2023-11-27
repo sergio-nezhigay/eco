@@ -1,4 +1,7 @@
 {
+  "rules": {
+    "camelcase": ["error", { "allow": ["aa_bb"] }]
+  },
   "extends": [
     "next/core-web-vitals",
     "standard",
