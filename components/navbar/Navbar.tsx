@@ -1,7 +1,5 @@
 import React from "react";
 
-import Icon from "@/components/ui/Icon";
-
 import Logo from "./Logo";
 import MobileNav from "./MobileNav";
 import GetInTouch from "./GetInTouch";
