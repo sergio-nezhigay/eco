@@ -124,7 +124,7 @@
   }
 
   .paragraph-regular {
-    @apply text-[16px] font-normal leading-[22.4px];
+    @apply text-[16px] font-normal leading-[19.2px] tracking-m4;
   }
 
   .paragraph-medium {
@@ -165,10 +165,6 @@
 
   .subtle-regular {
     @apply text-[10px] font-normal leading-[13px];
-  }
-
-  .placeholder {
-    @apply placeholder:text-light-400 dark:placeholder:text-light-500;
   }
 
   .invert-colors {

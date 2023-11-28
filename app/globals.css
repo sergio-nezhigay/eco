@@ -6,12 +6,21 @@
 
 .container {
   outline: 1px dotted blue;
+  /* overflow-y: auto; */
+}
+
+.backdrop-blur-sm {
+  --tw-backdrop-blur: blur(15px) !important;
+  background: rgba(23, 61, 51, 0.25);
+}
+
+::-webkit-scrollbar {
+  display: none;
 }
 
 html,
 body {
   font-family: var(--font-fira-sans), sans-serif;
-  background-color: #e2c4ac;
   color: #173d33;
 }
 h1,
@@ -24,9 +33,20 @@ h6 {
 }
 
 @layer utilities {
-  .w-inherit {
-    width: inherit;
+  .visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
   }
+
   .flex-center {
     @apply flex justify-center items-center;
   }

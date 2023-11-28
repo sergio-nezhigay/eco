@@ -14,7 +14,7 @@ module.exports = {
         xs: "20px",
         sm: "20px",
         md: "30px",
-        lg: "100px",
+        lg: "20px",
       },
       screens: {
         xs: "320px",
@@ -33,7 +33,6 @@ module.exports = {
 
         "accent-blue": "#1DA1F2",
         white: "#ffffff",
-        default: "red",
       },
       fontFamily: {
         firasans: ["var(--font-fira-sans)"],

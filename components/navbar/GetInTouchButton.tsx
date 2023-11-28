@@ -1,7 +1,7 @@
 import React from "react";
 import { Button } from "@/components/ui/button";
 
-function GetInTouch() {
+function GetInTouchButton() {
   return (
     <Button
       className=" md:flex-center group hidden gap-3 rounded-full bg-primary-300 px-4 py-[10px] 
@@ -20,4 +20,4 @@ function GetInTouch() {
   );
 }
 
-export default GetInTouch;
+export default GetInTouchButton;
