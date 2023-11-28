@@ -4,10 +4,15 @@
 
 @import url("../styles/theme.css");
 
+.container {
+  outline: 1px dotted blue;
+}
+
 html,
 body {
   font-family: var(--font-fira-sans), sans-serif;
-  background-color: #e2995f;
+  background-color: #e2c4ac;
+  color: #173d33;
 }
 h1,
 h2,
@@ -19,16 +24,9 @@ h6 {
 }
 
 @layer utilities {
-  .icon {
-    fill: transparent;
-    stroke: rgba(23, 61, 51, 1);
+  .w-inherit {
+    width: inherit;
   }
-  .icon:hover {
-    fill: transparent;
-    stroke: rgba(23, 61, 51, 1);
-    cursor: pointer;
-  }
-
   .flex-center {
     @apply flex justify-center items-center;
   }
@@ -55,10 +53,6 @@ h6 {
 
   .btn-tertiary {
     @apply bg-light-700 dark:bg-dark-300 !important;
-  }
-
-  .markdown {
-    @apply max-w-full prose dark:prose-p:text-light-700 dark:prose-ol:text-light-700 dark:prose-ul:text-light-500 dark:prose-strong:text-white dark:prose-headings:text-white prose-headings:text-dark-400 prose-h1:text-dark-300 prose-h2:text-dark-300 prose-p:text-dark-500 prose-ul:text-dark-500 prose-ol:text-dark-500;
   }
 
   .primary-gradient {

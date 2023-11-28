@@ -4,13 +4,15 @@ function Icon({
   name,
   width,
   height,
+  strokeColor,
 }: {
   name: string;
   width: number;
   height: number;
+  strokeColor: string;
 }) {
   return (
-    <svg className="icon" width={width} height={height}>
+    <svg className="fill-current stroke-current" width={width} height={height}>
       <use href={`assets/icons/icons.svg#${name}`}></use>
     </svg>
   );

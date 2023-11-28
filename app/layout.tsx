@@ -2,6 +2,7 @@ import React from "react";
 import type { Metadata } from "next";
 import { Oswald, Fira_Sans as firaSans } from "next/font/google";
 import "./globals.css";
+import Navbar from "@/components/navbar/Navbar";
 
 const firasans = firaSans({
   weight: "400",
@@ -30,6 +31,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={`${firasans.variable} ${oswald.variable}`}>
+        <Navbar />
         {children}
       </body>
     </html>
