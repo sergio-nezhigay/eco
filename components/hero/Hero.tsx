@@ -14,7 +14,7 @@ function Hero() {
           <h1 className="mb-6 text-4xl uppercase leading-9 md:mb-0 md:max-w-[301px] md:text-5xl md:leading-[48px] lg:max-w-[485px] lg:text-[64px] lg:leading-[64px]">
             RENEWABLE ENERGY For any&nbsp;task
           </h1>
-          <div className="mr-[76px] md:flex md:w-[342px] md:flex-col md:justify-between lg:mr-0 lg:w-[459px]">
+          <div className=" md:flex md:w-[342px] md:flex-col md:justify-between lg:mr-0 lg:w-[459px]">
             <p className="paragraph-regular mb-6 text-justify md:mb-0 lg:mr-[96px]">
               Development and implementation of renewable non-polluting energy
               sources, generating power generation using energy wind, sun,

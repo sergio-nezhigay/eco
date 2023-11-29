@@ -4,15 +4,9 @@
 
 @import url("../styles/theme.css");
 
-.container {
+/* .container {
   outline: 1px dotted blue;
-  /* overflow-y: auto; */
-}
-
-.backdrop-blur-sm {
-  --tw-backdrop-blur: blur(15px) !important;
-  background: rgba(23, 61, 51, 0.25);
-}
+} */
 
 ::-webkit-scrollbar {
   display: none;
@@ -22,7 +16,9 @@ html,
 body {
   font-family: var(--font-fira-sans), sans-serif;
   color: #173d33;
+  background-color: rgba(243, 245, 250, 1);
 }
+
 h1,
 h2,
 h3,
@@ -45,6 +41,11 @@ h6 {
     clip-path: inset(100%);
     clip: rect(0 0 0 0);
     overflow: hidden;
+  }
+
+  .backdrop-blur-sm {
+    --tw-backdrop-blur: blur(15px) !important;
+    background: rgba(23, 61, 51, 0.25);
   }
 
   .flex-center {

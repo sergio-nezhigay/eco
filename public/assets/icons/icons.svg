@@ -54,6 +54,7 @@
 <path stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="4" stroke-width="2" d="M2.667 21.333h2.667"></path>
 <path stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="4" stroke-width="2" d="M16 12.933l-1.253 2.187c-0.28 0.48-0.053 0.88 0.507 0.88h1.493c0.56 0 0.787 0.4 0.507 0.88l-1.253 2.187"></path>
 </symbol>
+
 <symbol id="global-edit" viewBox="0 0 32 32">
 <path stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="4" stroke-width="2" d="M29.333 16c0-7.36-5.973-13.333-13.333-13.333s-13.333 5.973-13.333 13.333c0 7.36 5.973 13.333 13.333 13.333"></path>
 <path stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="4" stroke-width="2" d="M10.666 4h1.333c-2.6 7.787-2.6 16.213 0 24h-1.333"></path>
@@ -63,6 +64,7 @@
 <path stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2" d="M25.614 20.987l-4.72 4.72c-0.187 0.187-0.36 0.533-0.4 0.787l-0.253 1.8c-0.093 0.653 0.36 1.107 1.013 1.013l1.8-0.253c0.253-0.040 0.613-0.213 0.787-0.4l4.72-4.72c0.813-0.813 1.2-1.76 0-2.96-1.187-1.187-2.133-0.8-2.947 0.013z"></path>
 <path stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2" d="M24.934 21.667c0.4 1.44 1.52 2.56 2.96 2.96"></path>
 </symbol>
+
 <symbol id="maximize-circle" viewBox="0 0 32 32">
 <path stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="4" stroke-width="2" d="M22.667 4h5.333v5.333"></path>
 <path stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="4" stroke-width="2" d="M20 12l8-8"></path>

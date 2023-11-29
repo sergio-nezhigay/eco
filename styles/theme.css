@@ -95,12 +95,16 @@
     @apply text-[30px] font-bold leading-[42px] tracking-tighter;
   }
 
-  .h2-bold {
-    @apply text-[24px] font-bold leading-[31.2px];
+  .h2-base {
+    @apply text-[28px] uppercase md:text-[36px] lg:text-[48px] font-normal leading-[28px] md:leading-[36px] lg:leading-[48px];
   }
 
   .h2-semibold {
     @apply text-[24px] font-semibold leading-[31.2px];
+  }
+
+  .h3-base {
+    @apply text-[16px] md:text-[18px] lg:text-[32px] font-normal leading-[24px] lg:leading-[48px];
   }
 
   .h3-bold {
@@ -123,12 +127,12 @@
     @apply text-[18px] font-bold leading-[140%];
   }
 
-  .paragraph-regular {
-    @apply text-[16px] font-normal leading-[19.2px] tracking-m4;
+  .paragraph-small {
+    @apply text-[14px] font-normal leading-[16.8px] tracking-m4;
   }
 
-  .paragraph-medium {
-    @apply text-[16px] font-medium leading-[22.4px];
+  .paragraph-regular {
+    @apply text-[16px] font-normal leading-[19.2px] tracking-m4;
   }
 
   .paragraph-semibold {
@@ -189,5 +193,9 @@
       rgba(23, 28, 35, 0.41) 0%,
       rgba(19, 22, 28, 0.7) 100%
     );
+  }
+
+  .section-regular {
+    @apply pb-9 md:pb-[100px] lg:pb-[120px];
   }
 }
