@@ -26,7 +26,7 @@ module.exports = {
     extend: {
       colors: {
         primary: {
-          200: "#173D33",
+          200: "rgba(23, 61, 51, 1)",
           300: "rgba(151, 210, 139, 1)",
           400: "#DCEFD8",
           500: "rgba(234, 237, 241, 1)",

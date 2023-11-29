@@ -1,4 +1,4 @@
-import { ICard, IMenuLink } from "@/types";
+import { ICard, ICases, IMenuLink } from "@/types";
 
 export const menuLinks: IMenuLink[] = [
   {
@@ -49,5 +49,38 @@ export const VALUES_PART2: ICard[] = [
     description:
       "we do not strive to be the first among others, but we want to be the best in our business",
     iconId: "ranking",
+  },
+];
+
+export const CASES: ICases[] = [
+  {
+    title: `Lviv Region, Radekhiv town Private Enterprise "ZAKHIDNYI BUH"`,
+    description: "Wind Power for auto field irrigation",
+    date: "July 2023",
+    imgTag: "case1",
+  },
+  {
+    title: `Zhytomyr city Private Enterprise “Bosch”`,
+    description: "Solar Panels for industrial use",
+    date: "November 2023",
+    imgTag: "case2",
+  },
+  {
+    title: `Rivne city Private Enterprise “Biotech”`,
+    description: "Thermal modules",
+    date: "October 2023",
+    imgTag: "case3",
+  },
+  {
+    title: `Kherson city Private Enterprise “HealthyFarm”`,
+    description: "Wind power",
+    date: "September 2021",
+    imgTag: "case4",
+  },
+  {
+    title: `Zaporizhia city Private Enterprise “Biotech”`,
+    description: "Mini nuclear stations",
+    date: "May 2021",
+    imgTag: "case5",
   },
 ];

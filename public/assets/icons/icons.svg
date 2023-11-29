@@ -100,5 +100,13 @@
 <path fill="none" stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2.9639" d="M25.87 18.88l-8.093 7.194-8.093-7.194"></path>
 <path fill="none" stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2.9639" d="M17.776 5.926v19.947"></path>
 </symbol>
+<symbol id="arrow-right-large" viewBox="0 0 32 32">
+<path stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="10" stroke-width="1.3333" d="M19.241 7.905l8.093 8.093-8.093 8.093"></path>
+<path stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="10" stroke-width="1.3333" d="M4.668 15.999h22.44"></path>
+</symbol>
+<symbol id="arrow-right-up2" viewBox="0 0 32 32">
+<path stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="10" stroke-width="1.7143" d="M12.569 7.985h11.446v11.446"></path>
+<path stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="10" stroke-width="1.7143" d="M7.987 24.012l15.868-15.867"></path>
+</symbol>
 </defs>
 </svg>

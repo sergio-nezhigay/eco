@@ -8,3 +8,10 @@ export interface ICard {
   iconId: string;
   title: string;
 }
+
+export interface ICases {
+  description: string;
+  date: string;
+  title: string;
+  imgTag: string;
+}

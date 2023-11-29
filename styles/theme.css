@@ -127,6 +127,10 @@
     @apply text-[18px] font-bold leading-[140%];
   }
 
+  .paragraph-smallest {
+    @apply text-[12px] md:text-[14px] lg:text-[16px] lg:leading-[19.2px] font-normal leading-[14.4px] md:leading-[16.8px] tracking-m4;
+  }
+
   .paragraph-small {
     @apply text-[14px] font-normal leading-[16.8px] tracking-m4;
   }
@@ -135,8 +139,8 @@
     @apply text-[16px] font-normal leading-[19.2px] tracking-m4;
   }
 
-  .paragraph-semibold {
-    @apply text-[16px] font-semibold leading-[20.8px];
+  .paragraph-larger {
+    @apply text-[18px] md:text-[20px] lg:text-[24px] lg:leading-[28.8px] font-normal leading-[21.6px] md:leading-[24px] tracking-m4;
   }
 
   .body-regular {
@@ -197,5 +201,22 @@
 
   .section-regular {
     @apply pb-9 md:pb-[100px] lg:pb-[120px];
+  }
+
+  .swiper-button-next,
+  .swiper-button-prev {
+    @apply absolute !top-[-59px] md:!top-[-76px] lg:!top-[-86px]  cursor-pointer;
+  }
+
+  .swiper-button-next::after,
+  .swiper-button-prev::after {
+    display: none;
+  }
+
+  .swiper-button-next {
+    @apply absolute !right-[20px] md:!right-[20px] lg:!right-[27px] !left-auto;
+  }
+  .swiper-button-prev {
+    @apply absolute !right-[98px] md:!right-[108px] lg:!right-[135px] !left-auto;
   }
 }
