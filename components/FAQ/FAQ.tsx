@@ -12,7 +12,7 @@ import "./styles.css";
 
 function FAQ() {
   return (
-    <section className="section-regular">
+    <section className="section-regular" id="faq">
       <div className="container grid grid-cols-1 md:grid-cols-2 md:gap-6">
         <h2 className="h2-base mb-6 md:order-2 md:mb-0 ">
           Frequently Asked Questions

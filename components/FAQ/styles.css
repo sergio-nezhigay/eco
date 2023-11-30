@@ -1,10 +1,10 @@
-.border-b {
+#faq .border-b {
   border-color: var(--accent);
 }
-.border-b:last-child {
+#faq .border-b:last-child {
   border-color: transparent;
 }
 
-.border-b:last-child button[data-state="closed"] {
+#faq .border-b:last-child button[data-state="closed"] {
   padding-bottom: 0;
 }

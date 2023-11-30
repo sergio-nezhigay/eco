@@ -20,7 +20,7 @@ function Hero() {
               sources, generating power generation using energy wind, sun,
               water, biomass
             </p>
-            <LearnMoreButton />
+            <LearnMoreButton content="Learn more" />
           </div>
         </div>
 

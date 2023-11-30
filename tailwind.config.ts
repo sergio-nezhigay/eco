@@ -8,6 +8,9 @@ module.exports = {
     "./src/**/*.{ts,tsx}",
   ],
   theme: {
+    placeholderColor: {
+      primary: "rgba(189, 189, 189, 1)",
+    },
     container: {
       center: true,
       padding: {
@@ -30,6 +33,7 @@ module.exports = {
           300: "rgba(151, 210, 139, 1)",
           400: "#DCEFD8",
           500: "rgba(234, 237, 241, 1)",
+          700: "rgba(189, 189, 189, 1)",
           800: "rgba(243, 245, 250, 1)",
         },
 

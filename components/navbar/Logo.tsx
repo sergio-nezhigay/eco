@@ -14,7 +14,12 @@ function Logo() {
         className="mb-[7px]"
       />
       <div className="text-primary-200 group-hover:text-primary-300 group-active:text-primary-300">
-        <Icon name="name" width={170} height={40} strokeColor="red" />
+        <Icon
+          name="name"
+          width={170}
+          height={40}
+          style="fill-current stroke-current"
+        />
       </div>
 
       <Image

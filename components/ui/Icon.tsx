@@ -1,18 +1,15 @@
 import React from "react";
 
-function Icon({
-  name,
-  width,
-  height,
-  strokeColor,
-}: {
+interface IconProps {
   name: string;
-  width: number;
-  height: number;
-  strokeColor: string;
-}) {
+  width?: number;
+  height?: number;
+  style?: string;
+}
+
+function Icon({ name, width = 24, height = 24, style }: IconProps) {
   return (
-    <svg className="fill-current stroke-current" width={width} height={height}>
+    <svg className={style} width={width} height={height}>
       <use href={`assets/icons/icons.svg#${name}`}></use>
     </svg>
   );

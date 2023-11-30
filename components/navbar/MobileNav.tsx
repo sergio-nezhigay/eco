@@ -49,7 +49,12 @@ function MobileNav() {
     <Sheet>
       <SheetTrigger>
         <div className="flex-center h-[40px] w-[40px] rounded-full bg-primary-400 hover:bg-primary-300 ">
-          <Icon name="menu" width={16} height={16} strokeColor="red" />
+          <Icon
+            name="menu"
+            width={16}
+            height={16}
+            style="fill-current stroke-current"
+          />
         </div>
       </SheetTrigger>
       <SheetContent

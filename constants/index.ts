@@ -117,3 +117,18 @@ export const FAQs: IFAQs[] = [
       "EcoSolution fosters community partnerships, ensuring equitable access and aiding the renewable shift.",
   },
 ];
+
+export const CONTACT_INFO = {
+  phones: ["38 (098) 12 34 567", "38 (063) 12 34 567"],
+  email: "office@ecosolution.com",
+  address: {
+    street: "Shota Rustaveli, 7",
+    city: "Lvivstreet",
+    postalCode: "79005",
+    country: "Ukraine",
+  },
+  socialNetworks: [
+    { name: "Facebook", link: "https://facebook.com/" },
+    { name: "Instagram", link: "https://www.instagram.com/" },
+  ],
+};
