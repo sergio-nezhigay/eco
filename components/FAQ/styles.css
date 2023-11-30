@@ -4,3 +4,7 @@
 .border-b:last-child {
   border-color: transparent;
 }
+
+.border-b:last-child button[data-state="closed"] {
+  padding-bottom: 0;
+}
