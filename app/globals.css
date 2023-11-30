@@ -12,11 +12,16 @@
   display: none;
 }
 
+:root {
+  --dark: #173d33;
+  --light: rgba(243, 245, 250, 1);
+  --accent: rgba(151, 210, 139, 1);
+}
+
 html,
 body {
   font-family: var(--font-fira-sans), sans-serif;
-  color: #173d33;
-  background-color: rgba(243, 245, 250, 1);
+  color: var(--dark);
 }
 
 h1,

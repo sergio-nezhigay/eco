@@ -15,3 +15,8 @@ export interface ICases {
   title: string;
   imgTag: string;
 }
+
+export interface IFAQs {
+  question: string;
+  answer: string;
+}

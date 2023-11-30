@@ -140,7 +140,7 @@
   }
 
   .paragraph-larger {
-    @apply text-[18px] md:text-[20px] lg:text-[24px] lg:leading-[28.8px] font-normal leading-[21.6px] md:leading-[24px] tracking-m4;
+    @apply text-[18px] md:text-[20px] lg:text-[24px] lg:leading-[28.8px] !font-normal leading-[21.6px] md:leading-[24px] tracking-m4;
   }
 
   .body-regular {

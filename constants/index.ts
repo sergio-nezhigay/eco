@@ -1,4 +1,4 @@
-import { ICard, ICases, IMenuLink } from "@/types";
+import { ICard, ICases, IFAQs, IMenuLink } from "@/types";
 
 export const menuLinks: IMenuLink[] = [
   {
@@ -82,5 +82,38 @@ export const CASES: ICases[] = [
     description: "Mini nuclear stations",
     date: "May 2021",
     imgTag: "case5",
+  },
+];
+
+export const FAQs: IFAQs[] = [
+  {
+    question:
+      "How do wind turbines and solar panels work together in a renewable energy system?",
+    answer:
+      "Wind turbines and solar panels generate electricity through different mechanisms. Wind turbines harness the kinetic energy of the wind to turn blades, which then drive a generator. Solar panels convert sunlight into electricity through the photovoltaic effect. When integrated into a renewable energy system, these technologies complement each other by providing a continuous and reliable power supply. Wind power is often more abundant during certain times, while solar power is consistent during daylight hours, resulting in a more stable overall energy output.",
+  },
+  {
+    question:
+      "What sets EcoSolution's renewable energy solutions apart from others on the market?",
+    answer:
+      "EcoSolution excels with innovative tech, efficiency, and a commitment to sustainability.",
+  },
+  {
+    question:
+      "How can businesses and communities benefit from integrating renewable energy solutions from EcoSolution?",
+    answer:
+      "Businesses gain cost savings, communities get cleaner environments with EcoSolution's renewables.",
+  },
+  {
+    question:
+      "What measures does EcoSolution take to ensure the environmental sustainability of its products?",
+    answer:
+      "EcoSolution prioritizes eco-friendly materials, production, and disposal for sustainable products.",
+  },
+  {
+    question:
+      "How does EcoSolution engage with local communities and support a just transition to renewable energy?",
+    answer:
+      "EcoSolution fosters community partnerships, ensuring equitable access and aiding the renewable shift.",
   },
 ];

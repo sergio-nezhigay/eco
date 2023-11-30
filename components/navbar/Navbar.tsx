@@ -2,7 +2,7 @@ import React from "react";
 
 import Logo from "./Logo";
 import MobileNav from "./MobileNav";
-import GetInTouchButton from "./GetInTouchButton";
+import ActionButton from "../ui/ActionButton";
 
 function Navbar() {
   return (
@@ -11,7 +11,7 @@ function Navbar() {
         <Logo />
         <div className="flex-center gap-3">
           <MobileNav />
-          <GetInTouchButton />
+          <ActionButton content="Get in touch" style="hidden" />
         </div>
       </div>
     </nav>

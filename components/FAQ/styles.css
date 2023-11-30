@@ -1,0 +1,6 @@
+.border-b {
+  border-color: var(--accent);
+}
+.border-b:last-child {
+  border-color: transparent;
+}
