@@ -28,7 +28,6 @@ function Field({
     <FormItem className={`mb-7 space-y-0 ${isTextarea ? "flex flex-col" : ""}`}>
       <FormLabel
         id={fieldName.replace(/[^a-zA-Z]/g, "")}
-        htmlFor={fieldName.replace(/[^a-zA-Z]/g, "")}
         className="paragraph-regular  "
       >
         {fieldName}
