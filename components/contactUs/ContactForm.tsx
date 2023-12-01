@@ -46,15 +46,6 @@ function ContactForm() {
     form.reset();
   }
 
-  const test = ({ field }) => (
-    <Field
-      fieldName="* Full name:"
-      field={field}
-      placeholder="John Rosie"
-      error={formState.errors.username?.message}
-    />
-  );
-
   return (
     <Form {...form}>
       <form
