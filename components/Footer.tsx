@@ -19,6 +19,7 @@ function Footer() {
 
           <ScrollLink
             activeClass="active"
+            href="/"
             to="main"
             spy={true}
             smooth={true}

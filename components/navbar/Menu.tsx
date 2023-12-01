@@ -25,6 +25,7 @@ const NavContent = () => {
                 <ScrollLink
                   activeClass="active"
                   to={id}
+                  href={`/#${id}`}
                   spy={true}
                   offset={-110}
                   smooth={true}
@@ -51,9 +52,9 @@ const NavContent = () => {
 function Menu() {
   return (
     <Sheet>
-      <SheetTrigger aria-controls="qwerty">
+      <SheetTrigger aria-controls="span">
         <span
-          id="qwerty"
+          id="span"
           className="flex-center h-[40px] w-[40px] rounded-full bg-primary-400 hover:bg-primary-300 "
         >
           <Icon

@@ -7,7 +7,7 @@ import {
 } from "@/components/ui/accordion";
 import { Separator } from "../ui/separator";
 import { FAQs } from "@/constants";
-import ActionButton from "../ui/ActionButton";
+import PrimaryButton from "../common/PrimaryButton";
 import "./styles.css";
 
 function Test() {
@@ -44,7 +44,7 @@ function Test() {
             Didn&apos;t find the answer to your question?{" "}
           </p>
           <div className="flex-center">
-            <ActionButton content="Contact Us" scrollTo="contactus" />
+            <PrimaryButton content="Contact Us" scrollTo="contactus" />
           </div>
         </div>
       </div>

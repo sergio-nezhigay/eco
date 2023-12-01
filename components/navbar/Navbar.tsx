@@ -3,7 +3,7 @@ import React, { useState, useEffect } from "react";
 
 import Logo from "./Logo";
 import Menu from "./Menu";
-import ActionButton from "../ui/ActionButton";
+import PrimaryButton from "../common/PrimaryButton";
 
 function Navbar() {
   const [scrolled, setScrolled] = useState(false);
@@ -20,13 +20,13 @@ function Navbar() {
     };
   }, []);
   return (
-    <header>
-      <nav className="container fixed  left-2/4 top-9 z-50 -translate-x-1/2  bg-primary-800/80  p-4 lg:top-2">
+    <header className="fixed inset-x-0 z-50">
+      <nav className="container   top-9    bg-primary-800/80  p-4 lg:top-2">
         <div className="relative flex items-center justify-between">
           <Logo isScrolled={scrolled} />
           <div className="flex-center gap-3">
             <Menu />
-            <ActionButton
+            <PrimaryButton
               content="Get in touch"
               scrollTo="contactus"
               isHiddenInMobile

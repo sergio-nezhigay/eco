@@ -15,7 +15,8 @@ body {
   font-family: var(--font-fira-sans), sans-serif;
   color: var(--dark);
   background-color: var(--light);
-  overflow-y: scroll;
+  /* couldn't do without it: (blurred header shift when menu clicked) */
+  /* overflow-y: scroll; */
 }
 
 h1,

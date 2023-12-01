@@ -6,7 +6,7 @@ import { useForm } from "react-hook-form";
 
 import formSchema from "./formSchema";
 import { Form, FormField } from "@/components/ui/form";
-import SecondaryButton from "../main/SecondaryButton";
+import SecondaryButton from "../common/SecondaryButton";
 import Field from "./Field";
 
 export function ProfileForm() {}

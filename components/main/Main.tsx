@@ -1,6 +1,6 @@
 "use client";
 import React from "react";
-import SecondaryButton from "./SecondaryButton";
+import SecondaryButton from "../common/SecondaryButton";
 import { Separator } from "@/components/ui/separator";
 import Image from "next/image";
 import { convertImage, toBase64 } from "@/utils/getBase64";
@@ -27,12 +27,13 @@ function Main() {
             </p>
             <ScrollLink
               activeClass="active"
+              href="/#cases"
               to="cases"
               spy={true}
               smooth={true}
               offset={-110}
               duration={500}
-              className="w-fit cursor-pointer"
+              className="w-fit cursor-pointer "
             >
               <SecondaryButton content="Learn more" />
             </ScrollLink>

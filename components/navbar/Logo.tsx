@@ -11,6 +11,7 @@ function Logo({ isScrolled = false }: ILogo) {
   return (
     <ScrollLink
       activeClass="active"
+      href="/#main"
       to="main"
       spy={true}
       smooth={true}
