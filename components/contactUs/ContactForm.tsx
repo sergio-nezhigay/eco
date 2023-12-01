@@ -37,13 +37,23 @@ function ContactForm() {
     form.reset();
   }
 
+  const test = ({ field }) => (
+    <Field
+      fieldName="* Full name:"
+      field={field}
+      placeholder="John Rosie"
+      error={formState.errors.username?.message}
+    />
+  );
+
   return (
     <Form {...form}>
       <form
         onSubmit={form.handleSubmit(onSubmit)}
         className="bg-primary-500 px-3 py-9 md:w-1/2 md:px-6 lg:p-12"
       >
-        <FormField
+        <FormField control={form.control} name="username" render={test} />
+        {/* <FormField
           control={form.control}
           name="username"
           render={({ field }) => (
@@ -54,7 +64,7 @@ function ContactForm() {
               error={formState.errors.username?.message}
             />
           )}
-        />
+        /> */}
 
         <FormField
           control={form.control}
