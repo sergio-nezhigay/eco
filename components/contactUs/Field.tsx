@@ -26,7 +26,10 @@ function Field({
 
   return (
     <FormItem className={`mb-7 space-y-0 ${isTextarea ? "flex flex-col" : ""}`}>
-      <FormLabel htmlFor={fieldName} className="paragraph-regular  ">
+      <FormLabel
+        htmlFor={fieldName.replace(/[^a-zA-Z]/g, "")}
+        className="paragraph-regular  "
+      >
         {fieldName}
       </FormLabel>
       <FormControl
