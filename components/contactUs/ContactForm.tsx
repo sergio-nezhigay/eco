@@ -10,7 +10,7 @@ import { Form, FormField } from "@/components/ui/form";
 import formSchema from "./formSchema";
 import Field from "./Field";
 import SecondaryButton from "../main/SecondaryButton";
-import error from "next/error";
+import { Button } from "../ui/button";
 
 export function ProfileForm() {}
 
@@ -100,8 +100,9 @@ function ContactForm() {
         {successMessage && (
           <h2 className="mb-5 text-green-500">{successMessage}</h2>
         )}
-
-        <SecondaryButton content="Send" />
+        <button type="submit" className="p-0">
+          <SecondaryButton content="Send" />
+        </button>
       </form>
     </Form>
   );

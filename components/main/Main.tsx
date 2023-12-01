@@ -1,8 +1,10 @@
+"use client";
 import React from "react";
 import SecondaryButton from "./SecondaryButton";
 import { Separator } from "@/components/ui/separator";
 import Image from "next/image";
 import { convertImage, toBase64 } from "@/utils/getBase64";
+import { Link as ScrollLink } from "react-scroll";
 
 const BLUR_COLOR = "#9fbbcd";
 
@@ -23,7 +25,17 @@ function Main() {
               sources, generating power generation using energy wind, sun,
               water, biomass
             </p>
-            <SecondaryButton content="Learn more" />
+            <ScrollLink
+              activeClass="active"
+              to="cases"
+              spy={true}
+              smooth={true}
+              offset={-70}
+              duration={500}
+              className="w-fit cursor-pointer"
+            >
+              <SecondaryButton content="Learn more" />
+            </ScrollLink>
           </div>
         </div>
 
