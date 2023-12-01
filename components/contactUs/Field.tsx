@@ -33,7 +33,7 @@ function Field({
         {fieldName}
       </FormLabel>
       <FormControl
-        id={fieldName}
+        id={fieldName.replace(/[^a-zA-Z]/g, "")}
         className={`rounded-none ${borderClasses} bg-transparent`}
       >
         {isTextarea ? (
