@@ -26,24 +26,27 @@ function Field({
 
   return (
     <FormItem className={`mb-7 space-y-0 ${isTextarea ? "flex flex-col" : ""}`}>
-      <FormLabel className="paragraph-regular  ">
+      <FormLabel htmlFor={fieldName} className="paragraph-regular  ">
         {fieldName}
-        <FormControl className={`rounded-none ${borderClasses} bg-transparent`}>
-          {isTextarea ? (
-            <textarea
-              {...field}
-              placeholder={placeholder}
-              className="h-[147px] resize-none px-0 py-2 text-[18px] leading-[21.6px] tracking-m4 outline-0 ring-current ring-offset-2 placeholder:text-primary-700 focus:ring-2 lg:text-[20px] lg:leading-[24px]"
-            />
-          ) : (
-            <Input
-              {...field}
-              placeholder={placeholder}
-              className="px-0 py-2 text-[18px] leading-[21.6px] tracking-m4 outline-0  ring-current placeholder:text-primary-700 focus:ring-1 lg:text-[20px] lg:leading-[24px]"
-            />
-          )}
-        </FormControl>
       </FormLabel>
+      <FormControl
+        id={fieldName}
+        className={`rounded-none ${borderClasses} bg-transparent`}
+      >
+        {isTextarea ? (
+          <textarea
+            {...field}
+            placeholder={placeholder}
+            className="h-[147px] resize-none px-0 py-2 text-[18px] leading-[21.6px] tracking-m4 outline-0 ring-current ring-offset-2 placeholder:text-primary-700 focus:ring-2 lg:text-[20px] lg:leading-[24px]"
+          />
+        ) : (
+          <Input
+            {...field}
+            placeholder={placeholder}
+            className="px-0 py-2 text-[18px] leading-[21.6px] tracking-m4 outline-0  ring-current placeholder:text-primary-700 focus:ring-1 lg:text-[20px] lg:leading-[24px]"
+          />
+        )}
+      </FormControl>
       <FormMessage className="pt-3 text-right text-[12px] font-normal text-[#D28B8B]" />
     </FormItem>
   );
