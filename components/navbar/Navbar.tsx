@@ -15,22 +15,21 @@ function Navbar() {
 
     window.addEventListener("scroll", handleScroll);
 
-    // Cleanup the event listener on component unmount
     return () => {
       window.removeEventListener("scroll", handleScroll);
     };
   }, []);
   return (
     <header>
-      <nav className="container fixed  left-2/4 top-9 z-10 -translate-x-1/2  bg-primary-800/80  p-4 lg:top-2">
+      <nav className="container fixed  left-2/4 top-9 z-50 -translate-x-1/2  bg-primary-800/80  p-4 lg:top-2">
         <div className="relative flex items-center justify-between">
           <Logo isScrolled={scrolled} />
           <div className="flex-center gap-3">
             <Menu />
             <ActionButton
               content="Get in touch"
-              style="hidden"
               scrollTo="contactus"
+              isHiddenInMobile
             />
           </div>
         </div>

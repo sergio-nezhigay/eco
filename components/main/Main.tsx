@@ -30,7 +30,7 @@ function Main() {
               to="cases"
               spy={true}
               smooth={true}
-              offset={-70}
+              offset={-110}
               duration={500}
               className="w-fit cursor-pointer"
             >
@@ -60,7 +60,8 @@ function Main() {
             fill
             alt="window turbines"
             priority
-            objectFit="cover"
+            style={{ objectFit: "cover" }}
+            sizes="100%"
             placeholder="blur"
             blurDataURL={`data:image/svg+xml;base64,${toBase64(
               convertImage(319, 200, BLUR_COLOR)

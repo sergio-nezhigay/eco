@@ -26,19 +26,18 @@ const NavContent = () => {
                   activeClass="active"
                   to={id}
                   spy={true}
-                  offset={-90}
+                  offset={-110}
                   smooth={true}
                   duration={500}
                   className="flex-center cursor-pointer gap-2 text-2xl leading-[29px] tracking-m4 text-white hover:text-primary-300"
                 >
                   <p>{label}</p>
-                  <svg
-                    className="fill-current stroke-current"
+                  <Icon
+                    name="arrow-right-up"
                     width={16}
                     height={16}
-                  >
-                    <use href={`assets/icons/icons.svg#arrow-right-up`}></use>
-                  </svg>
+                    style="fill-current stroke-current"
+                  />
                 </ScrollLink>
               </SheetClose>
             </li>
@@ -75,13 +74,12 @@ function Menu() {
                   type="submit"
                   className="flex-center h-fit w-fit gap-1 p-0 text-white hover:text-primary-300"
                 >
-                  <svg
-                    className="fill-current stroke-current"
+                  <Icon
+                    name="close-light"
                     width={20}
                     height={20}
-                  >
-                    <use href={`assets/icons/icons.svg#close-light`}></use>
-                  </svg>
+                    style="fill-current stroke-current"
+                  />
                   <span className="mb-1 text-xl font-normal">close</span>
                 </Button>
               </SheetClose>
@@ -102,13 +100,7 @@ function Menu() {
                   rel="noopener noreferrer"
                   className="text-white hover:text-primary-300"
                 >
-                  <svg
-                    className="fill-current stroke-current"
-                    width={24}
-                    height={24}
-                  >
-                    <use href={`assets/icons/icons.svg#facebook`}></use>
-                  </svg>
+                  <Icon name="facebook" style="fill-current stroke-current" />
                 </a>
                 <a
                   href="https://www.instagram.com/"
@@ -117,13 +109,7 @@ function Menu() {
                   rel="noopener noreferrer"
                   className="text-white hover:text-primary-300"
                 >
-                  <svg
-                    className="fill-current stroke-current"
-                    width={24}
-                    height={24}
-                  >
-                    <use href={`assets/icons/icons.svg#instagram`}></use>
-                  </svg>
+                  <Icon name="instagram" style="fill-current stroke-current" />
                 </a>
               </div>
             </SheetClose>

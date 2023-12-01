@@ -14,7 +14,7 @@ function Logo({ isScrolled = false }: ILogo) {
       to="main"
       spy={true}
       smooth={true}
-      offset={-70}
+      offset={-110}
       duration={500}
       className="group flex cursor-pointer items-end gap-1"
     >

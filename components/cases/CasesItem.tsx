@@ -3,6 +3,7 @@ import Image from "next/image";
 import { ICases } from "@/types";
 
 import { Separator } from "../ui/separator";
+import Icon from "../ui/Icon";
 
 export default function CasesItem({
   title,
@@ -17,7 +18,8 @@ export default function CasesItem({
           src={`/assets/images/${imgTag}.jpg`}
           fill
           alt={imgTag}
-          objectFit="cover"
+          sizes="100%"
+          style={{ objectFit: "cover" }}
         />
       </div>
       <div className=" flex  grow flex-col justify-between px-3 pb-3 pt-6 lg:px-12 lg:py-9">
@@ -26,9 +28,10 @@ export default function CasesItem({
             {title}
           </p>
           <div className="flex-center h-[60px] w-[60px] rounded-full bg-primary-300 group-hover:bg-primary-200">
-            <svg className="h-7 w-7 rotate-[-45deg] fill-transparent stroke-current group-hover:stroke-primary-300">
-              <use href="assets/icons/icons.svg#arrow-right"></use>
-            </svg>
+            <Icon
+              name="arrow-right"
+              style="fill-current stroke-current h-7 w-7 rotate-[-45deg] fill-transparent stroke-current group-hover:stroke-primary-300"
+            />
           </div>
         </div>
         <div className="flex grow flex-col justify-end">

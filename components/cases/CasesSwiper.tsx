@@ -8,24 +8,25 @@ import CasesItem from "./CasesItem";
 import "swiper/css";
 import "swiper/css/pagination";
 import "swiper/css/navigation";
+import Icon from "../ui/Icon";
 
 function CasesSwiper({ handleSlideChange }: any) {
   const swiperButton = (rotation: number) => {
     return (
       <div className="absolute h-[66px] w-[66px] rounded-full border border-primary-200 p-[14px] text-primary-200 hover:border-primary-300 hover:text-primary-300 md:p-[23px] lg:h-[84px] lg:w-[84px]">
-        <svg
-          className={`${
+        <Icon
+          name="arrow-right-large"
+          style={`${
             rotation === 180 ? "rotate-180" : ""
           } fill-transparent stroke-current`}
-        >
-          <use href="assets/icons/icons.svg#arrow-right-large"></use>
-        </svg>
+        />
       </div>
     );
   };
   return (
     <div className="relative">
       <Swiper
+        loop
         navigation={{
           nextEl: ".swiper-button-next",
           prevEl: ".swiper-button-prev",

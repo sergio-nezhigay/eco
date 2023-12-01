@@ -43,7 +43,8 @@ function About() {
               src="/assets/images/wind-farms.jpg"
               fill
               alt="Wind farms"
-              objectFit="cover"
+              style={{ objectFit: "cover" }}
+              sizes="100%"
               placeholder="blur"
               blurDataURL={`data:image/svg+xml;base64,${toBase64(
                 convertImage(342, 197, BLUR_COLOR)
@@ -55,7 +56,8 @@ function About() {
               src="/assets/images/man-worker.jpg"
               fill
               alt="Wind farms"
-              objectFit="cover"
+              style={{ objectFit: "cover" }}
+              sizes="100%"
               placeholder="blur"
               blurDataURL={`data:image/svg+xml;base64,${toBase64(
                 convertImage(342, 197, BLUR_COLOR)

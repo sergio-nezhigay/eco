@@ -10,9 +10,12 @@ function Cases() {
 
   const handleSlideChange = (swiper: {
     activeIndex: number;
+    realIndex: number;
     params: { slidesPerView: number };
   }) => {
-    setCurrentSlide(swiper.activeIndex + swiper.params.slidesPerView);
+    let current = swiper.realIndex + swiper.params.slidesPerView;
+    if (current > CASES.length) current -= CASES.length;
+    setCurrentSlide(current);
   };
 
   const counter = (
