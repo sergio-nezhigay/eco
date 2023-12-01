@@ -2,7 +2,6 @@ import { CONTACT_INFO } from "@/constants";
 import Link from "next/link";
 import React from "react";
 import Icon from "../ui/Icon";
-import Social from "../Social";
 
 function Address() {
   return (
