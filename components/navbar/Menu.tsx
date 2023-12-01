@@ -51,7 +51,7 @@ const NavContent = () => {
 function Menu() {
   return (
     <Sheet>
-      <SheetTrigger>
+      <SheetTrigger aria-controls="">
         <span className="flex-center h-[40px] w-[40px] rounded-full bg-primary-400 hover:bg-primary-300 ">
           <Icon
             name="menu"
