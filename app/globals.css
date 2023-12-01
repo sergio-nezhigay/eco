@@ -4,10 +4,6 @@
 
 @import url("../styles/theme.css");
 
-::-webkit-scrollbar {
-  display: none;
-}
-
 :root {
   --dark: #173d33;
   --light: rgba(243, 245, 250, 1);
@@ -19,6 +15,7 @@ body {
   font-family: var(--font-fira-sans), sans-serif;
   color: var(--dark);
   background-color: var(--light);
+  overflow-y: scroll;
 }
 
 h1,
@@ -34,15 +31,4 @@ h6 {
   .flex-center {
     @apply flex justify-center items-center;
   }
-}
-
-/* Hide scrollbar for Chrome, Safari and Opera */
-.no-scrollbar::-webkit-scrollbar {
-  display: none;
-}
-
-/* Hide scrollbar for IE, Edge and Firefox */
-.no-scrollbar {
-  -ms-overflow-style: none; /* IE and Edge */
-  scrollbar-width: none; /* Firefox */
 }
