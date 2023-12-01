@@ -27,13 +27,14 @@ function Field({
   return (
     <FormItem className={`mb-7 space-y-0 ${isTextarea ? "flex flex-col" : ""}`}>
       <FormLabel
+        id={fieldName.replace(/[^a-zA-Z]/g, "")}
         htmlFor={fieldName.replace(/[^a-zA-Z]/g, "")}
         className="paragraph-regular  "
       >
         {fieldName}
       </FormLabel>
       <FormControl
-        id={fieldName.replace(/[^a-zA-Z]/g, "")}
+        aria-describedby={fieldName.replace(/[^a-zA-Z]/g, "")}
         className={`rounded-none ${borderClasses} bg-transparent`}
       >
         {isTextarea ? (
