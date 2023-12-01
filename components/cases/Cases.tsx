@@ -25,7 +25,7 @@ function Cases() {
   );
 
   return (
-    <section className="section-regular">
+    <section id="cases" className="section-regular">
       <div className="container">
         <div className="mb-[19px] md:mb-[38px]  md:flex md:items-end md:gap-6 lg:gap-12">
           <div className="relative md:basis-2/4">

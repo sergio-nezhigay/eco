@@ -1,11 +1,23 @@
 import React from "react";
 import Image from "next/image";
 import Icon from "@/components/ui/Icon";
-import Link from "next/link";
+import { Link as ScrollLink } from "react-scroll";
 
-function Logo() {
+interface ILogo {
+  isScrolled?: boolean;
+}
+
+function Logo({ isScrolled = false }: ILogo) {
   return (
-    <Link href="/" className="group flex items-end gap-1">
+    <ScrollLink
+      activeClass="active"
+      to="main"
+      spy={true}
+      smooth={true}
+      offset={-70}
+      duration={500}
+      className="group flex cursor-pointer items-end gap-1"
+    >
       <Image
         src="/assets/images/logo.png"
         width={31}
@@ -13,7 +25,11 @@ function Logo() {
         alt="logo"
         className="mb-[7px]"
       />
-      <div className="text-primary-200 group-hover:text-primary-300 group-active:text-primary-300">
+      <div
+        className={`${
+          isScrolled ? "text-primary-300" : "text-primary-200"
+        } text-primary-200 group-hover:text-primary-300 group-active:text-primary-300`}
+      >
         <Icon
           name="name"
           width={170}
@@ -29,7 +45,7 @@ function Logo() {
         alt="logo"
         className="mb-[7px]"
       />
-    </Link>
+    </ScrollLink>
   );
 }
 

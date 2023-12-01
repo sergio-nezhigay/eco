@@ -4,7 +4,7 @@ import Address from "./Address";
 
 function ContactUs() {
   return (
-    <section className="section-regular">
+    <section id="contactus" className="section-regular">
       <div className="container">
         <h2 className="h2-base mb-6 text-center md:mb-[40px] lg:mb-[120px] ">
           Contact us

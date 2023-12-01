@@ -7,9 +7,9 @@ import { Separator } from "../ui/separator";
 
 const BLUR_COLOR = "#a4bccc";
 
-function Values() {
+function About() {
   return (
-    <section className="pb-9 md:pb-[100px] lg:pb-[120px]">
+    <section id="about" className="pb-9 md:pb-[100px] lg:pb-[120px]">
       <div className="container">
         <div className="grid grid-cols-4 gap-6 lg:gap-12">
           <h2 className="h2-base col-span-4  md:col-span-2">
@@ -77,4 +77,4 @@ function Values() {
   );
 }
 
-export default Values;
+export default About;

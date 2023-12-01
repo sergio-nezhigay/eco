@@ -44,7 +44,7 @@ function FAQ() {
             Didn&apos;t find the answer to your question?{" "}
           </p>
           <div className="flex-center">
-            <ActionButton content="Contact Us" />
+            <ActionButton content="Contact Us" scrollTo="contactus" />
           </div>
         </div>
       </div>

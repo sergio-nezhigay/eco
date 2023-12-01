@@ -1,7 +1,7 @@
 import React from "react";
 import Icon from "../ui/Icon";
 import { Button } from "../ui/button";
-import Link from "next/link";
+import { Link as ScrollLink } from "react-scroll";
 import {
   Sheet,
   SheetClose,
@@ -18,15 +18,20 @@ const NavContent = () => {
   return (
     <div className="flex  flex-col justify-between">
       <ul className="flex flex-col items-start gap-2">
-        {menuLinks.map((item) => {
+        {menuLinks.map(({ id, label }) => {
           return (
-            <li key={item.id}>
+            <li key={id}>
               <SheetClose asChild>
-                <Link
-                  href={item.id}
-                  className="flex-center gap-2 text-2xl leading-[29px] tracking-m4 text-white hover:text-primary-300"
+                <ScrollLink
+                  activeClass="active"
+                  to={id}
+                  spy={true}
+                  offset={-90}
+                  smooth={true}
+                  duration={500}
+                  className="flex-center cursor-pointer gap-2 text-2xl leading-[29px] tracking-m4 text-white hover:text-primary-300"
                 >
-                  <p>{item.label}</p>
+                  <p>{label}</p>
                   <svg
                     className="fill-current stroke-current"
                     width={16}
@@ -34,7 +39,7 @@ const NavContent = () => {
                   >
                     <use href={`assets/icons/icons.svg#arrow-right-up`}></use>
                   </svg>
-                </Link>
+                </ScrollLink>
               </SheetClose>
             </li>
           );
@@ -44,7 +49,7 @@ const NavContent = () => {
   );
 };
 
-function MobileNav() {
+function Menu() {
   return (
     <Sheet>
       <SheetTrigger>
@@ -90,8 +95,11 @@ function MobileNav() {
           <SheetFooter>
             <SheetClose asChild>
               <div className="mr-auto flex flex-row gap-2">
-                <Link
+                <a
                   href="https://www.facebook.com/"
+                  target="_blank"
+                  aria-label={`Link to Facebook`}
+                  rel="noopener noreferrer"
                   className="text-white hover:text-primary-300"
                 >
                   <svg
@@ -101,9 +109,12 @@ function MobileNav() {
                   >
                     <use href={`assets/icons/icons.svg#facebook`}></use>
                   </svg>
-                </Link>
-                <Link
+                </a>
+                <a
                   href="https://www.instagram.com/"
+                  target="_blank"
+                  aria-label={`Link to Facebook`}
+                  rel="noopener noreferrer"
                   className="text-white hover:text-primary-300"
                 >
                   <svg
@@ -113,7 +124,7 @@ function MobileNav() {
                   >
                     <use href={`assets/icons/icons.svg#instagram`}></use>
                   </svg>
-                </Link>
+                </a>
               </div>
             </SheetClose>
           </SheetFooter>
@@ -123,4 +134,4 @@ function MobileNav() {
   );
 }
 
-export default MobileNav;
+export default Menu;

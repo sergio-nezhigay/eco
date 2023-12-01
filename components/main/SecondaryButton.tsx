@@ -1,7 +1,7 @@
 import React from "react";
 import { Button } from "@/components/ui/button";
 
-function LearnMoreButton({ content }: { content: string }) {
+function SecondaryButton({ content }: { content: string }) {
   return (
     <Button
       type="submit"
@@ -21,4 +21,4 @@ function LearnMoreButton({ content }: { content: string }) {
   );
 }
 
-export default LearnMoreButton;
+export default SecondaryButton;

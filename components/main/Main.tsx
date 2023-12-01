@@ -1,14 +1,17 @@
 import React from "react";
-import LearnMoreButton from "./LearnMoreButton";
+import SecondaryButton from "./SecondaryButton";
 import { Separator } from "@/components/ui/separator";
 import Image from "next/image";
 import { convertImage, toBase64 } from "@/utils/getBase64";
 
 const BLUR_COLOR = "#9fbbcd";
 
-function Hero() {
+function Main() {
   return (
-    <section className="pb-9 pt-[222px] md:pb-[100px] md:pt-[240px] lg:pb-[120px] lg:pt-[264px]">
+    <section
+      id="main"
+      className="pb-9 pt-[222px] md:pb-[100px] md:pt-[240px] lg:pb-[120px] lg:pt-[264px]"
+    >
       <div className="container">
         <div className="mb-6 md:flex md:justify-between">
           <h1 className="mb-6 text-4xl uppercase leading-9 md:mb-0 md:max-w-[301px] md:text-5xl md:leading-[48px] lg:max-w-[485px] lg:text-[64px] lg:leading-[64px]">
@@ -20,7 +23,7 @@ function Hero() {
               sources, generating power generation using energy wind, sun,
               water, biomass
             </p>
-            <LearnMoreButton content="Learn more" />
+            <SecondaryButton content="Learn more" />
           </div>
         </div>
 
@@ -57,4 +60,4 @@ function Hero() {
   );
 }
 
-export default Hero;
+export default Main;

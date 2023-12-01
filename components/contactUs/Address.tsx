@@ -2,6 +2,7 @@ import { CONTACT_INFO } from "@/constants";
 import Link from "next/link";
 import React from "react";
 import Icon from "../ui/Icon";
+import Social from "../Social";
 
 function Address() {
   return (
@@ -21,8 +22,8 @@ function Address() {
       </div>
 
       <p className="paragraph-regular mb-2 lg:mb-4">E-mail:</p>
-      <Link
-        className="group mb-6 flex gap-2 lg:mb-8"
+      <a
+        className="group mb-6 flex items-center gap-2 lg:mb-8"
         href={`mailto:${CONTACT_INFO.email}`}
       >
         <div className="flex group-hover:text-primary-300  ">
@@ -31,33 +32,35 @@ function Address() {
         <p className="text-justify text-[20px] leading-6 tracking-m4 lg:text-[24px] lg:leading-7">
           {CONTACT_INFO.email}
         </p>
-      </Link>
+      </a>
 
       <p className="paragraph-regular mb-2 lg:mb-4">Address:</p>
-      <div className="mb-6 flex gap-2 lg:mb-8">
+      <div className="mb-6 flex items-center gap-2 lg:mb-8">
         <Icon name="map" style="fill-transparent stroke-current" />
         <p className="text-justify text-[20px] leading-6 tracking-m4 lg:text-[24px] lg:leading-7">
-          {CONTACT_INFO.address.postalCode}, {CONTACT_INFO.address.country},{" "}
-          {CONTACT_INFO.address.city}, {CONTACT_INFO.address.street}
+          {CONTACT_INFO.address}
         </p>
       </div>
 
       <p className="paragraph-regular mb-2 lg:mb-4">Social Networks:</p>
       <div className="flex gap-2 ">
-        {CONTACT_INFO.socialNetworks.map((network, index) => (
-          <Link
-            key={index}
-            href={network.link}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="p-3 hover:text-primary-300 lg:p-0"
-          >
-            <Icon
-              name={network.name.toLowerCase()}
-              style="fill-transparent stroke-current"
-            />
-          </Link>
-        ))}
+        {CONTACT_INFO.socialNetworks.map(
+          ({ name, link }: { name: string; link: string }) => (
+            <a
+              key={name}
+              href={link}
+              target="_blank"
+              aria-label={`Link to ${name}`}
+              rel="noopener noreferrer"
+              className="p-3 hover:text-primary-300 lg:p-0"
+            >
+              <Icon
+                name={name.toLowerCase()}
+                style="fill-transparent stroke-current"
+              />
+            </a>
+          )
+        )}
       </div>
     </address>
   );

@@ -9,7 +9,7 @@ import { Form, FormField } from "@/components/ui/form";
 
 import formSchema from "./formSchema";
 import Field from "./Field";
-import LearnMoreButton from "../hero/LearnMoreButton";
+import SecondaryButton from "../main/SecondaryButton";
 import error from "next/error";
 
 export function ProfileForm() {}
@@ -30,8 +30,6 @@ function ContactForm() {
   });
 
   const { formState } = form;
-
-  console.log("🚀 ~ file: ContactForm.tsx:32 ~ formState:", formState.errors);
 
   async function onSubmit(values: z.infer<typeof formSchema>) {
     console.log("Form values are:", values);
@@ -69,6 +67,7 @@ function ContactForm() {
               fieldName="* Email:"
               field={field}
               placeholder="johnrosie@gmail.com"
+              error={formState.errors.email?.message}
             />
           )}
         />
@@ -81,6 +80,7 @@ function ContactForm() {
               fieldName="* Phone:"
               field={field}
               placeholder="380961234567"
+              error={formState.errors.phone?.message}
             />
           )}
         />
@@ -101,7 +101,7 @@ function ContactForm() {
           <h2 className="mb-5 text-green-500">{successMessage}</h2>
         )}
 
-        <LearnMoreButton content="Send" />
+        <SecondaryButton content="Send" />
       </form>
     </Form>
   );
