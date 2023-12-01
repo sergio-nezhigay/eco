@@ -44,7 +44,6 @@ function About() {
               fill
               alt="Wind farms"
               style={{ objectFit: "cover" }}
-              sizes="100%"
               placeholder="blur"
               blurDataURL={`data:image/svg+xml;base64,${toBase64(
                 convertImage(342, 197, BLUR_COLOR)
@@ -57,7 +56,6 @@ function About() {
               fill
               alt="Wind farms"
               style={{ objectFit: "cover" }}
-              sizes="100%"
               placeholder="blur"
               blurDataURL={`data:image/svg+xml;base64,${toBase64(
                 convertImage(342, 197, BLUR_COLOR)

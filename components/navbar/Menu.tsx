@@ -52,14 +52,14 @@ function Menu() {
   return (
     <Sheet>
       <SheetTrigger>
-        <div className="flex-center h-[40px] w-[40px] rounded-full bg-primary-400 hover:bg-primary-300 ">
+        <span className="flex-center h-[40px] w-[40px] rounded-full bg-primary-400 hover:bg-primary-300 ">
           <Icon
             name="menu"
             width={16}
             height={16}
             style="fill-current stroke-current"
           />
-        </div>
+        </span>
       </SheetTrigger>
       <SheetContent
         className=" right-2/4 top-9 h-[calc(100%-72px)] w-[calc(100%-40px)]  

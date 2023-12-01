@@ -9,7 +9,11 @@ function Address() {
       <p className="paragraph-regular mb-2 lg:mb-4">Phone:</p>
       <div className="mb-6 flex flex-col gap-3 lg:mb-8">
         {CONTACT_INFO.phones.map((phone, index) => (
-          <Link className="group flex gap-2" key={index} href={`tel:${phone}`}>
+          <Link
+            className="group flex gap-2"
+            key={index}
+            href={`tel:${phone.replace(/\D/g, "")}`}
+          >
             <div className="flex group-hover:text-primary-300  ">
               <Icon name="call" style="fill-transparent stroke-current" />
             </div>

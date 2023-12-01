@@ -18,7 +18,6 @@ export default function CasesItem({
           src={`/assets/images/${imgTag}.jpg`}
           fill
           alt={imgTag}
-          sizes="100%"
           style={{ objectFit: "cover" }}
         />
       </div>
