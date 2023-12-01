@@ -8,6 +8,7 @@ import CasesItem from "./CasesItem";
 import "swiper/css";
 import "swiper/css/pagination";
 import "swiper/css/navigation";
+import "./swiper.css";
 import Icon from "../ui/Icon";
 
 function CasesSwiper({ handleSlideChange }: any) {

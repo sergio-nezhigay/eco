@@ -1,0 +1,16 @@
+.swiper-button-next,
+.swiper-button-prev {
+  @apply absolute !top-[-59px] md:!top-[-76px] lg:!top-[-86px]  cursor-pointer;
+}
+
+.swiper-button-next::after,
+.swiper-button-prev::after {
+  display: none;
+}
+
+.swiper-button-next {
+  @apply absolute !right-[20px] md:!right-[20px] lg:!right-[27px] !left-auto;
+}
+.swiper-button-prev {
+  @apply absolute !right-[98px] md:!right-[108px] lg:!right-[135px] !left-auto;
+}
