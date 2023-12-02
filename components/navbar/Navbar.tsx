@@ -21,7 +21,7 @@ function Navbar() {
   }, []);
   return (
     <header className="fixed inset-x-0 z-50">
-      <nav className="container   top-9    bg-primary-800/80  p-4 lg:top-2">
+      <nav className="container   top-9    bg-primary-800/90  p-4 lg:top-2">
         <div className="relative flex items-center justify-between">
           <Logo isScrolled={scrolled} />
           <div className="flex-center gap-3">

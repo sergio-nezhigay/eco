@@ -26,10 +26,11 @@ export default function CasesItem({
           <p className="paragraph-larger w-[175px] text-justify md:w-[194px] lg:w-[360px]">
             {title}
           </p>
+
           <div className="flex-center h-[60px] w-[60px] rounded-full bg-primary-300 group-hover:bg-primary-200">
             <Icon
-              name="arrow-right"
-              style="fill-current stroke-current h-7 w-7 rotate-[-45deg] fill-transparent stroke-current group-hover:stroke-primary-300"
+              name="arrow-right-large"
+              style="h-7 w-7 rotate-[-45deg] fill-transparent stroke-current group-hover:stroke-primary-300"
             />
           </div>
         </div>

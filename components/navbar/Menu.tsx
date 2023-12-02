@@ -3,7 +3,6 @@
 import React from "react";
 import Icon from "../ui/Icon";
 import { Button } from "../ui/button";
-import { Link as ScrollLink } from "react-scroll";
 import {
   Sheet,
   SheetClose,
@@ -13,53 +12,8 @@ import {
   SheetTrigger,
 } from "@/components/ui/sheet";
 import { Separator } from "@/components/ui/separator";
-import { useActiveSectionContext } from "@/context/active-section-context";
-import { menuLinks } from "@/constants";
-
-const NavContent = () => {
-  const { activeSection, setActiveSection, setTimeOfLastClick } =
-    useActiveSectionContext();
-
-  return (
-    <div className="flex  flex-col justify-between">
-      <ul className="flex flex-col items-start gap-2">
-        {menuLinks.map(({ id, label }) => {
-          const isActiveSection = id === activeSection;
-          return (
-            <li key={id}>
-              <SheetClose asChild>
-                <ScrollLink
-                  activeClass="active"
-                  to={id}
-                  href={`/#${id}`}
-                  spy={true}
-                  offset={-110}
-                  smooth={true}
-                  duration={500}
-                  onClick={() => {
-                    setActiveSection(id);
-                    setTimeOfLastClick(Date.now());
-                  }}
-                  className={`${
-                    isActiveSection ? "section-active" : "section-notactive"
-                  } flex-center cursor-pointer gap-2 text-2xl leading-[29px] tracking-m4 text-white/25 hover:text-white`}
-                >
-                  <p>{label}</p>
-                  <Icon
-                    name="arrow-right-up"
-                    width={16}
-                    height={16}
-                    style="fill-current stroke-current"
-                  />
-                </ScrollLink>
-              </SheetClose>
-            </li>
-          );
-        })}
-      </ul>
-    </div>
-  );
-};
+import NavContent from "./NavContent";
+import SocialItems from "../common/SocialItems";
 
 function Menu() {
   return (
@@ -79,10 +33,10 @@ function Menu() {
       </SheetTrigger>
       <SheetContent
         className=" right-2/4 top-9 h-[calc(100%-72px)] w-[calc(100%-40px)]  
-       translate-x-1/2 overflow-hidden rounded-[25px] border-none bg-transparent 
+       translate-x-1/2 overflow-hidden rounded-[25px] border-none bg-transparent  
        p-0 md:right-[30px] md:top-6 md:h-[calc(100%-48px)] md:w-[365px] md:translate-x-0 lg:right-[100px]"
       >
-        <div className="flex h-full w-full flex-col justify-between border-none bg-[#173D33BF] p-6">
+        <div className="flex h-full w-full flex-col justify-between border-none bg-[#173D33BF] p-6 backdrop-blur-md">
           <div>
             <SheetHeader>
               <SheetClose asChild>
@@ -108,26 +62,11 @@ function Menu() {
 
           <SheetFooter>
             <SheetClose asChild>
-              <div className="mr-auto flex flex-row gap-2">
-                <a
-                  href="https://www.facebook.com/"
-                  target="_blank"
-                  aria-label={`Link to Facebook`}
-                  rel="noopener noreferrer"
-                  className="text-white hover:text-primary-300"
-                >
-                  <Icon name="facebook" style="fill-current stroke-current" />
-                </a>
-                <a
-                  href="https://www.instagram.com/"
-                  target="_blank"
-                  aria-label={`Link to Facebook`}
-                  rel="noopener noreferrer"
-                  className="text-white hover:text-primary-300"
-                >
-                  <Icon name="instagram" style="fill-current stroke-current" />
-                </a>
-              </div>
+              <>
+                <ul className="mr-auto flex flex-row gap-2">
+                  <SocialItems styles="text-white" />
+                </ul>
+              </>
             </SheetClose>
           </SheetFooter>
         </div>

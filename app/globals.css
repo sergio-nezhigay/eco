@@ -35,6 +35,9 @@ h6 {
   .flex-center {
     @apply flex justify-center items-center;
   }
+  .flex-start {
+    @apply flex justify-start items-center;
+  }
 
   .section-active {
     @apply text-primary-300;

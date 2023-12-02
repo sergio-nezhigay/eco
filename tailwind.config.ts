@@ -37,7 +37,6 @@ module.exports = {
           800: "rgba(243, 245, 250, 1)",
         },
 
-        "accent-blue": "#1DA1F2",
         white: "#ffffff",
       },
       fontFamily: {
@@ -67,6 +66,9 @@ module.exports = {
       },
       letterSpacing: {
         m4: "-0.04em",
+      },
+      backdropBlur: {
+        sm: "2px",
       },
     },
   },

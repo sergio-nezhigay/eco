@@ -7,6 +7,7 @@ import { Separator } from "./ui/separator";
 import Icon from "./ui/Icon";
 import Logo from "./navbar/Logo";
 import { CONTACT_INFO } from "@/constants";
+import SocialItems from "./common/SocialItems";
 
 function Footer() {
   return (
@@ -29,40 +30,33 @@ function Footer() {
           >
             <div className="flex-center h-[32px] w-[32px] rounded-full bg-primary-300 hover:bg-primary-200 hover:text-primary-300 ">
               <Icon
-                name="arrow-right"
+                name="arrow-right-large"
                 width={16}
                 height={16}
                 style="fill-transparent stroke-current rotate-[-90deg]"
               />
             </div>
           </ScrollLink>
-          <div className="col-span-2 mx-auto flex gap-2 md:order-2 md:col-span-1 md:ml-3 md:mr-auto md:justify-items-start lg:ml-[149px]">
-            {CONTACT_INFO.socialNetworks.map(
-              ({ name, link }: { name: string; link: string }) => (
-                <a
-                  key={name}
-                  href={link}
-                  target="_blank"
-                  aria-label={`Link to ${name}`}
-                  rel="noopener noreferrer"
-                  className=" hover:text-primary-300 lg:p-0"
-                >
-                  <Icon
-                    name={name.toLowerCase()}
-                    style="fill-transparent stroke-current"
-                  />
-                </a>
-              )
-            )}
-          </div>
+          <ul className="col-span-2 mx-auto flex gap-2 md:order-2 md:col-span-1 md:ml-3 md:mr-auto md:justify-items-start lg:ml-[149px]">
+            <SocialItems />
+          </ul>
         </div>
-        <div className="paragraph-regular flex flex-col gap-4 text-center md:grid md:grid-cols-[2fr,1fr,1fr] md:items-center md:gap-0">
-          <p className="md:mr-auto ">{CONTACT_INFO.address}</p>
-          <p className=" md:ml-3 md:mr-auto lg:ml-[149px]">
-            {CONTACT_INFO.email}
-          </p>
-          <p className=" md:ml-auto ">ecosolution © 2023</p>
-        </div>
+        <address className="not-italic">
+          <ul className="paragraph-regular flex flex-col gap-4 text-center  md:grid md:grid-cols-[2fr,1fr,1fr] md:items-center md:gap-0">
+            <li className="md:mr-auto" aria-label="Address">
+              {CONTACT_INFO.address}
+            </li>
+            <li
+              className="md:ml-3 md:mr-auto lg:ml-[149px]"
+              aria-label="Email Address"
+            >
+              {CONTACT_INFO.email}
+            </li>
+            <li className="md:ml-auto" aria-label="Copyright Information">
+              ecosolution © 2023
+            </li>
+          </ul>
+        </address>
       </div>
     </footer>
   );

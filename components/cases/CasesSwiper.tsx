@@ -14,12 +14,12 @@ import Icon from "../ui/Icon";
 function CasesSwiper({ handleSlideChange }: any) {
   const swiperButton = (rotation: number) => {
     return (
-      <div className="absolute h-[66px] w-[66px] rounded-full border border-primary-200 p-[14px] text-primary-200 hover:border-primary-300 hover:text-primary-300 md:p-[23px] lg:h-[84px] lg:w-[84px]">
+      <div className="flex-center absolute h-[66px] w-[66px] rounded-full border border-primary-200  text-primary-200 hover:border-primary-300 hover:text-primary-300  lg:h-[84px] lg:w-[84px]">
         <Icon
           name="arrow-right-large"
           style={`${
             rotation === 180 ? "rotate-180" : ""
-          } fill-transparent stroke-current`}
+          } fill-transparent stroke-current !w-9 !h-9`}
         />
       </div>
     );
@@ -45,9 +45,10 @@ function CasesSwiper({ handleSlideChange }: any) {
           },
         }}
         onSlideChange={handleSlideChange}
+        wrapperTag="ul"
       >
         {CASES.map(({ title, description, date, imgTag }) => (
-          <SwiperSlide key={title}>
+          <SwiperSlide key={title} tag="li">
             <CasesItem
               title={title}
               description={description}

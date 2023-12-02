@@ -18,10 +18,10 @@ function Faqs() {
   return (
     <section ref={ref} className="section-regular" id="faq">
       <div className="container grid grid-cols-1 md:grid-cols-2 md:gap-6">
-        <h2 className="h2-base mb-6 md:order-2 md:mb-0 ">
+        <h2 className="h2-base mb-6 md:order-2 md:mb-0 lg:pl-[161px]">
           Frequently Asked Questions
         </h2>
-        <div className="col-span-2  mb-9 md:order-1 md:col-span-1 md:row-span-2 md:mb-0">
+        <div className="col-span-2 mb-9  md:order-1 md:col-span-1 md:row-span-2 md:mb-0 md:pt-[7px]">
           <Separator className=" mb-0 bg-primary-300 " />
           <Accordion
             type="single"
@@ -36,7 +36,7 @@ function Faqs() {
                     {question}
                   </span>
                 </AccordionTrigger>
-                <AccordionContent className="pl-6 text-justify leading-[16.8px] lg:pb-2">
+                <AccordionContent className="pl-6 text-justify leading-[16.8px]  lg:pb-2">
                   {answer}
                 </AccordionContent>
               </AccordionItem>
@@ -44,10 +44,10 @@ function Faqs() {
           </Accordion>
         </div>
         <div className="md:order-3 md:self-end">
-          <p className="mb-3 text-center text-[18px] font-normal   leading-[21.6px]  tracking-m4 lg:text-[24px] lg:leading-[28.8px]">
+          <p className="mb-3 text-[18px] font-normal leading-[21.6px]   tracking-m4  lg:pl-[161px] lg:text-[24px] lg:leading-[28.8px]">
             Didn&apos;t find the answer to your question?{" "}
           </p>
-          <div className="flex-center">
+          <div className="flex-center md:flex-start md:pl-[85px] lg:pl-[296px]">
             <PrimaryButton content="Contact Us" scrollTo="contactus" />
           </div>
         </div>

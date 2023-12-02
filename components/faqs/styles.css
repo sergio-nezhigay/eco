@@ -8,3 +8,7 @@
 #faq .border-b:last-child button[data-state="closed"] {
   padding-bottom: 0;
 }
+
+#faq .border-b:last-child div {
+  padding-bottom: 0;
+}

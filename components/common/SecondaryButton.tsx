@@ -7,10 +7,10 @@ function SecondaryButton({ content }: { content: string }) {
       {content}
       <span className="flex-center h-[32px] w-[32px] rounded-full  bg-primary-300 text-primary-200 hover:border-none">
         <Icon
-          name="arrow-down"
+          name="arrow-right-large"
           width={16}
           height={16}
-          style="-rotate-90 fill-current stroke-current"
+          style=" fill-transparent  stroke-current"
         />
       </span>
     </span>
