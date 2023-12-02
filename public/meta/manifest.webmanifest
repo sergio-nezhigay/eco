@@ -1,0 +1,10 @@
+{
+    "theme_color": "#eeccab",
+    "background_color": "#f7f3ef",
+    "display": "browser",
+    "scope": "/",
+    "start_url": "/",
+    "name": "Ecosolution",
+    "short_name": "Ecosolution",
+    "icons": []
+}

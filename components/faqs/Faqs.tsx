@@ -10,7 +10,7 @@ import { FAQs } from "@/constants";
 import PrimaryButton from "../common/PrimaryButton";
 import "./styles.css";
 
-function Faq() {
+function Faqs() {
   return (
     <section className="section-regular" id="faq">
       <div className="container grid grid-cols-1 md:grid-cols-2 md:gap-6">
@@ -52,4 +52,4 @@ function Faq() {
   );
 }
 
-export default Faq;
+export default Faqs;
