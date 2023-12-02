@@ -1,3 +1,5 @@
+"use client";
+
 import React from "react";
 import {
   Accordion,
@@ -8,11 +10,13 @@ import {
 import { Separator } from "../ui/separator";
 import { FAQs } from "@/constants";
 import PrimaryButton from "../common/PrimaryButton";
+import { useSectionInView } from "@/lib/hooks";
 import "./styles.css";
 
 function Faqs() {
+  const { ref } = useSectionInView("faq");
   return (
-    <section className="section-regular" id="faq">
+    <section ref={ref} className="section-regular" id="faq">
       <div className="container grid grid-cols-1 md:grid-cols-2 md:gap-6">
         <h2 className="h2-base mb-6 md:order-2 md:mb-0 ">
           Frequently Asked Questions

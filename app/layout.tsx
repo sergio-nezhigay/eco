@@ -1,6 +1,7 @@
 import React from "react";
 import type { Metadata } from "next";
 import { Oswald, Fira_Sans as firaSans } from "next/font/google";
+import ActiveSectionContextProvider from "@/context/active-section-context";
 import Navbar from "@/components/navbar/Navbar";
 import Footer from "@/components/Footer";
 import "./globals.css";
@@ -20,7 +21,7 @@ const oswald = Oswald({
 
 export const BASE_URL = "https://eco1-six.vercel.app/";
 export const TITLE = "Eco solution";
-export const DESCRIPTION = "Eco solution – ваш партнер ";
+export const DESCRIPTION = "Eco solution – your partner ";
 
 export const metadata: Metadata = {
   title: TITLE,
@@ -52,10 +53,11 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={`${firasans.variable} ${oswald.variable}`}>
-        <Navbar />
-
-        {children}
-        <Footer />
+        <ActiveSectionContextProvider>
+          <Navbar />
+          {children}
+          <Footer />
+        </ActiveSectionContextProvider>
       </body>
     </html>
   );

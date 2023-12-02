@@ -15,8 +15,11 @@ body {
   font-family: var(--font-fira-sans), sans-serif;
   color: var(--dark);
   background-color: var(--light);
-  /* couldn't do without it: (blurred header shift when menu clicked) */
-  overflow-y: scroll;
+}
+
+/* couldn't do without it: (blurred header shift when menu clicked) */
+::-webkit-scrollbar {
+  display: none;
 }
 
 h1,
@@ -31,5 +34,12 @@ h6 {
 @layer utilities {
   .flex-center {
     @apply flex justify-center items-center;
+  }
+
+  .section-active {
+    @apply text-primary-300;
+  }
+  .section-notactive {
+    @apply text-white/25;
   }
 }

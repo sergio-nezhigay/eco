@@ -1,3 +1,5 @@
+"use client";
+
 import React from "react";
 import Icon from "../ui/Icon";
 import { Button } from "../ui/button";
@@ -11,14 +13,18 @@ import {
   SheetTrigger,
 } from "@/components/ui/sheet";
 import { Separator } from "@/components/ui/separator";
-
+import { useActiveSectionContext } from "@/context/active-section-context";
 import { menuLinks } from "@/constants";
 
 const NavContent = () => {
+  const { activeSection, setActiveSection, setTimeOfLastClick } =
+    useActiveSectionContext();
+
   return (
     <div className="flex  flex-col justify-between">
       <ul className="flex flex-col items-start gap-2">
         {menuLinks.map(({ id, label }) => {
+          const isActiveSection = id === activeSection;
           return (
             <li key={id}>
               <SheetClose asChild>
@@ -30,7 +36,13 @@ const NavContent = () => {
                   offset={-110}
                   smooth={true}
                   duration={500}
-                  className="flex-center cursor-pointer gap-2 text-2xl leading-[29px] tracking-m4 text-white hover:text-primary-300"
+                  onClick={() => {
+                    setActiveSection(id);
+                    setTimeOfLastClick(Date.now());
+                  }}
+                  className={`${
+                    isActiveSection ? "section-active" : "section-notactive"
+                  } flex-center cursor-pointer gap-2 text-2xl leading-[29px] tracking-m4 text-white/25 hover:text-white`}
                 >
                   <p>{label}</p>
                   <Icon

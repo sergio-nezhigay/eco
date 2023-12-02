@@ -1,16 +1,19 @@
 "use client";
 import React from "react";
-import SecondaryButton from "../common/SecondaryButton";
-import { Separator } from "@/components/ui/separator";
 import Image from "next/image";
-import { convertImage, toBase64 } from "@/utils/getBase64";
 import { Link as ScrollLink } from "react-scroll";
+import { Separator } from "@/components/ui/separator";
+import SecondaryButton from "../common/SecondaryButton";
+import { useSectionInView } from "@/lib/hooks";
+import { convertImage, toBase64 } from "@/utils/getBase64";
 
 const BLUR_COLOR = "#9fbbcd";
 
 function Main() {
+  const { ref } = useSectionInView("main");
   return (
     <section
+      ref={ref}
       id="main"
       className="pb-9 pt-[222px] md:pb-[100px] md:pt-[240px] lg:pb-[120px] lg:pt-[264px]"
     >

@@ -36,10 +36,14 @@ Ready to connect with us? Find our contact information in this section. Whether 
 
 This project is built using the following technologies:
 
-- **Next.js:** A React framework for building fast and scalable applications.
-- **React:** A JavaScript library for building user interfaces.
-- **Tailwind CSS:** A utility-first CSS framework for building responsive and highly customizable UIs.
-- **Shadcn Component Library:** Leveraging the Shadcn library for reusable and aesthetically pleasing UI components.
+- **Next.js:** A React framework for building fast and scalable applications. ⚡
+- **React:** A JavaScript library for building user interfaces. ⚛️
+- **Typescript:** Adds static typing to JavaScript for enhanced development. 📝
+- **Tailwind CSS:** A utility-first CSS framework for building responsive and highly customizable UIs. 🎨
+- **Shadcn Component Library:** Leveraging the Shadcn library for reusable and aesthetically pleasing UI components. 🧰
+- **react-intersection-observer:** For setting active sections while scrolling. 🚀
+- **Swiper:** A library for slides swiping, enhancing user experience. 🔄
+- **Zod:** Used for validation, ensuring data integrity and security. 🔐
 
 ## How to Run Locally 🚀
 

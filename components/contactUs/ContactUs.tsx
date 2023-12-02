@@ -1,10 +1,14 @@
+"use client";
+
 import React from "react";
 import ContactForm from "./ContactForm";
 import Address from "./Address";
+import { useSectionInView } from "@/lib/hooks";
 
 function ContactUs() {
+  const { ref } = useSectionInView("contactus");
   return (
-    <section id="contactus" className="section-regular">
+    <section ref={ref} id="contactus" className="section-regular">
       <div className="container">
         <h2 className="h2-base mb-6 text-center md:mb-[40px] lg:mb-[120px] ">
           Contact us

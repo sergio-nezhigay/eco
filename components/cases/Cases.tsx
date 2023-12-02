@@ -3,9 +3,11 @@ import React, { useState } from "react";
 
 import { CASES } from "@/constants";
 import { Separator } from "@radix-ui/react-separator";
+import { useSectionInView } from "@/lib/hooks";
 import CasesSwiper from "./CasesSwiper";
 
 function Cases() {
+  const { ref } = useSectionInView("cases");
   const [currentSlide, setCurrentSlide] = useState(1);
 
   const handleSlideChange = (swiper: {
@@ -28,7 +30,7 @@ function Cases() {
   );
 
   return (
-    <section id="cases" className="section-regular">
+    <section ref={ref} id="cases" className="section-regular">
       <div className="container">
         <div className="mb-[19px] md:mb-[38px]  md:flex md:items-end md:gap-6 lg:gap-12">
           <div className="relative md:basis-2/4">
