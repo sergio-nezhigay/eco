@@ -18,10 +18,30 @@ const oswald = Oswald({
   variable: "--font-oswald",
 });
 
+export const BASE_URL = "https://eco1-six.vercel.app/";
+export const TITLE = "Eco solution";
+export const DESCRIPTION = "Eco solution – ваш партнер ";
+
 export const metadata: Metadata = {
-  title: "Eco",
-  description: "Eco",
-  // icons: { icon: "/assets/images/site-logo.svg" },
+  title: TITLE,
+  description: DESCRIPTION,
+  openGraph: {
+    title: TITLE,
+    description: DESCRIPTION,
+    url: "/",
+    siteName: TITLE,
+    locale: "en",
+    type: "website",
+  },
+  metadataBase: new URL(BASE_URL),
+  manifest: "/meta/manifest.webmanifest",
+  robots: "all",
+  twitter: {
+    card: "summary_large_image",
+  },
+  alternates: {
+    canonical: BASE_URL,
+  },
 };
 
 export default function RootLayout({
