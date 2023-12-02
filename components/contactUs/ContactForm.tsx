@@ -95,9 +95,9 @@ function ContactForm() {
           )}
         />
         {successMessage && (
-          <h2 className="mb-5 text-green-500">{successMessage}</h2>
+          <h2 className="mb-5 text-primary-300">{successMessage}</h2>
         )}
-        <button type="submit" className="block p-0 pt-[2px] md:ml-auto">
+        <button type="submit" className="ml-auto block p-0 pt-[2px]">
           <SecondaryButton content="Send" />
         </button>
       </form>
