@@ -47,8 +47,8 @@ This project is built using the following technologies:
 
 ## How to Run Locally 🚀
 
-1. Clone this repository: `git clone https://github.com/your-username/ecosolution-landing.git`
-2. Navigate to the project directory: `cd ecosolution-landing`
+1. Clone this repository: `git clone https://github.com/sergio-nezhigay/eco.git`
+2. Navigate to the project directory: `cd eco`
 3. Install dependencies: `npm install`
 4. Run the development server: `npm run dev`
 5. Open your browser and visit `http://localhost:3000` to view the Ecosolution landing page.
