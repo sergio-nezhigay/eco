@@ -10,14 +10,14 @@ import { FAQs } from "@/constants";
 import PrimaryButton from "../common/PrimaryButton";
 import "./styles.css";
 
-function Test() {
+function Faq() {
   return (
     <section className="section-regular" id="faq">
       <div className="container grid grid-cols-1 md:grid-cols-2 md:gap-6">
         <h2 className="h2-base mb-6 md:order-2 md:mb-0 ">
-          Frequently Asked Questions
+          Frequently Asked Questions1
         </h2>
-        <div className="col-span-2  mb-8 md:order-1 md:col-span-1 md:row-span-2 md:mb-0">
+        <div className="col-span-2  mb-9 md:order-1 md:col-span-1 md:row-span-2 md:mb-0">
           <Separator className=" mb-0 bg-primary-300 " />
           <Accordion
             type="single"
@@ -52,4 +52,4 @@ function Test() {
   );
 }
 
-export default Test;
+export default Faq;

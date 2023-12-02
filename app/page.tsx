@@ -3,7 +3,7 @@ import Main from "@/components/main/Main";
 import Electricity from "@/components/Electricity";
 import Cases from "@/components/cases/Cases";
 import ContactUs from "@/components/contactUs/ContactUs";
-import Test from "@/components/test/Test";
+import Faq from "@/components/faq/Faq";
 
 export default function Home() {
   return (
@@ -12,7 +12,7 @@ export default function Home() {
       <About />
       <Electricity />
       <Cases />
-      <Test />
+      <Faq />
       <ContactUs />
     </>
   );

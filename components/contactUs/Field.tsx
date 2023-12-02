@@ -28,7 +28,7 @@ function Field({
     <FormItem className={`mb-7 space-y-0 ${isTextarea ? "flex flex-col" : ""}`}>
       <FormLabel
         id={fieldName.replace(/[^a-zA-Z]/g, "")}
-        className="paragraph-regular  "
+        className="text-base font-normal leading-[19.2px]"
       >
         {fieldName}
       </FormLabel>
@@ -40,13 +40,13 @@ function Field({
           <textarea
             {...field}
             placeholder={placeholder}
-            className="h-[147px] resize-none px-0 py-2 text-[18px] leading-[21.6px] tracking-m4 outline-0 ring-current ring-offset-2 placeholder:text-primary-700 focus:ring-2 lg:text-[20px] lg:leading-[24px]"
+            className="h-[147px] resize-none px-0 py-2 text-[18px] leading-[21.6px] tracking-m4 outline-0 ring-current ring-offset-2 placeholder:text-primary-700 focus:ring-2 lg:h-[161px] lg:py-3 lg:text-[20px] lg:leading-[24px]"
           />
         ) : (
           <Input
             {...field}
             placeholder={placeholder}
-            className="px-0 py-2 text-[18px] leading-[21.6px] tracking-m4 outline-0  ring-current placeholder:text-primary-700 focus:ring-1 lg:text-[20px] lg:leading-[24px]"
+            className="h-[33px] px-0 py-2 text-[18px] leading-[21.6px] tracking-m4 outline-0 ring-current placeholder:text-primary-700  focus:ring-1 lg:h-[40px] lg:py-3 lg:text-[20px] lg:leading-[24px]"
           />
         )}
       </FormControl>

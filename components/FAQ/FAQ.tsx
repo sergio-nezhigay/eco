@@ -17,7 +17,7 @@ function Faq() {
         <h2 className="h2-base mb-6 md:order-2 md:mb-0 ">
           Frequently Asked Questions
         </h2>
-        <div className="col-span-2  mb-8 md:order-1 md:col-span-1 md:row-span-2 md:mb-0">
+        <div className="col-span-2  mb-9 md:order-1 md:col-span-1 md:row-span-2 md:mb-0">
           <Separator className=" mb-0 bg-primary-300 " />
           <Accordion
             type="single"
@@ -27,12 +27,12 @@ function Faq() {
           >
             {FAQs.map(({ question, answer }, index) => (
               <AccordionItem key={index} value={`item-${index}`}>
-                <AccordionTrigger className="flex-row-reverse text-justify hover:!no-underline ">
+                <AccordionTrigger className="flex-row-reverse text-justify hover:!no-underline lg:py-6">
                   <span className="pl-2 font-firasans text-[18px] font-normal leading-[21.6px] tracking-m4   lg:text-[24px]  lg:leading-[28.8px]">
                     {question}
                   </span>
                 </AccordionTrigger>
-                <AccordionContent className="pl-6 text-justify leading-[16.8px]">
+                <AccordionContent className="pl-6 text-justify leading-[16.8px] lg:pb-2">
                   {answer}
                 </AccordionContent>
               </AccordionItem>

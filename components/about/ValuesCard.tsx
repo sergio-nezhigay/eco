@@ -20,7 +20,9 @@ function ValuesCard({ description, iconId, title }: ICard) {
         <h3 className="h3-base uppercase">{title}</h3>
       </div>
       <Separator className="mb-3 bg-primary-300 lg:mb-6" />
-      <p className="paragraph-small text-justify">{description}</p>
+      <p className="paragraph-small text-justify lg:text-base lg:leading-[19.2px]">
+        {description}
+      </p>
     </div>
   );
 }

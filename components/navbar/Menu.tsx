@@ -55,7 +55,7 @@ function Menu() {
       <SheetTrigger aria-controls="span">
         <span
           id="span"
-          className="flex-center h-[40px] w-[40px] rounded-full bg-primary-400 hover:bg-primary-300 "
+          className="flex-center h-[39px] w-[39px] rounded-full bg-primary-400 hover:bg-primary-300 "
         >
           <Icon
             name="menu"

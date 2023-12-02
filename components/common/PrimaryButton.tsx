@@ -25,7 +25,7 @@ function PrimaryButton({
       duration={500}
       tabIndex={0}
       className={` ${
-        isHiddenInMobile ? "hidden" : "flex"
+        isHiddenInMobile ? "hidden" : "flex-center"
       } md:flex-center group cursor-pointer  gap-3 rounded-full bg-primary-300 px-4 py-[10px] text-base font-normal leading-[19px] tracking-m4 hover:bg-primary-200 hover:text-primary-300 `}
     >
       {content}
