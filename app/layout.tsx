@@ -1,9 +1,11 @@
 import React from "react";
 import type { Metadata } from "next";
 import { Oswald, Fira_Sans as firaSans } from "next/font/google";
+
 import ActiveSectionContextProvider from "@/context/active-section-context";
 import Navbar from "@/components/navbar/Navbar";
 import Footer from "@/components/Footer";
+
 import "./globals.css";
 
 const firasans = firaSans({

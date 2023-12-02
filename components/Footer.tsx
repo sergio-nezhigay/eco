@@ -2,10 +2,10 @@
 
 import React from "react";
 import { Link as ScrollLink } from "react-scroll";
-import { Separator } from "./ui/separator";
-import Logo from "./navbar/Logo";
-import Icon from "./ui/Icon";
 
+import { Separator } from "./ui/separator";
+import Icon from "./ui/Icon";
+import Logo from "./navbar/Logo";
 import { CONTACT_INFO } from "@/constants";
 
 function Footer() {

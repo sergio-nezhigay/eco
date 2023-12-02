@@ -2,10 +2,11 @@
 
 import React from "react";
 import Image from "next/image";
+
+import { Separator } from "../ui/separator";
 import { VALUES_PART1, VALUES_PART2 } from "@/constants";
 import ValuesCard from "./ValuesCard";
 import { toBase64, convertImage } from "@/utils/getBase64";
-import { Separator } from "../ui/separator";
 import { useSectionInView } from "@/lib/hooks";
 
 const BLUR_COLOR = "#a4bccc";

@@ -1,6 +1,6 @@
 import { CONTACT_INFO } from "@/constants";
-import Link from "next/link";
 import React from "react";
+
 import Icon from "./ui/Icon";
 
 function Social() {
@@ -8,7 +8,7 @@ function Social() {
     <>
       {CONTACT_INFO.socialNetworks.map(
         ({ name, link }: { name: string; link: string }) => (
-          <Link
+          <a
             key={name}
             href={link}
             target="_blank"
@@ -19,7 +19,7 @@ function Social() {
               name={name.toLowerCase()}
               style="fill-transparent stroke-current"
             />
-          </Link>
+          </a>
         )
       )}
     </>
