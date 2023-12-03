@@ -46,9 +46,11 @@ function About() {
           <div className="relative hidden h-full w-full md:col-span-2 md:block">
             <Image
               src="/assets/images/wind-farms.jpg"
-              fill
+              width={0}
+              height={0}
+              sizes="100vw"
               alt="Wind farms"
-              style={{ objectFit: "cover" }}
+              style={{ objectFit: "cover", width: "100%", height: "auto" }}
               placeholder="blur"
               blurDataURL={`data:image/svg+xml;base64,${toBase64(
                 convertImage(342, 197, BLUR_COLOR)
@@ -58,9 +60,11 @@ function About() {
           <div className="relative hidden h-full w-full md:col-span-2 md:block">
             <Image
               src="/assets/images/man-worker.jpg"
-              fill
+              width={0}
+              height={0}
+              sizes="100vw"
               alt="Wind farms"
-              style={{ objectFit: "cover" }}
+              style={{ objectFit: "cover", width: "100%", height: "auto" }}
               placeholder="blur"
               blurDataURL={`data:image/svg+xml;base64,${toBase64(
                 convertImage(342, 197, BLUR_COLOR)

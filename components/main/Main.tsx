@@ -61,10 +61,12 @@ function Main() {
         <div className="relative h-[200px] w-full md:h-[348px] lg:h-[524px]">
           <Image
             src="/assets/images/wind-turbine.jpg"
-            fill
             alt="window turbines"
             priority
-            style={{ objectFit: "cover" }}
+            width={0}
+            height={0}
+            sizes="100vw"
+            style={{ objectFit: "cover", width: "100%", height: "auto" }}
             placeholder="blur"
             blurDataURL={`data:image/svg+xml;base64,${toBase64(
               convertImage(319, 200, BLUR_COLOR)

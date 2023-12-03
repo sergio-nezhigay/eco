@@ -16,9 +16,11 @@ export default function CasesItem({
       <div className="relative h-[168px] lg:h-[296px]">
         <Image
           src={`/assets/images/${imgTag}.jpg`}
-          fill
           alt={imgTag}
-          style={{ objectFit: "cover" }}
+          width={0}
+          height={0}
+          sizes="100vw"
+          style={{ objectFit: "cover", width: "100%", height: "auto" }}
         />
       </div>
       <div className=" flex  grow flex-col justify-between px-3 pb-3 pt-6 lg:px-12 lg:py-9">
