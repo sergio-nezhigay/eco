@@ -4,7 +4,7 @@ import Icon from "../ui/Icon";
 
 function SocialItems({ styles = "" }) {
   return (
-    <>
+    <ul className="flex gap-2">
       {CONTACT_INFO.socialNetworks.map(
         ({ name, link }: { name: string; link: string }) => (
           <li key={name}>
@@ -23,7 +23,7 @@ function SocialItems({ styles = "" }) {
           </li>
         )
       )}
-    </>
+    </ul>
   );
 }
 

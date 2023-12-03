@@ -62,11 +62,9 @@ function Menu() {
 
           <SheetFooter>
             <SheetClose asChild>
-              <>
-                <ul className="mr-auto flex flex-row gap-2">
-                  <SocialItems styles="text-white" />
-                </ul>
-              </>
+              <div className="mr-auto ">
+                <SocialItems styles="text-white" />
+              </div>
             </SheetClose>
           </SheetFooter>
         </div>

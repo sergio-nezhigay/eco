@@ -46,11 +46,8 @@ function Address() {
           {CONTACT_INFO.address}
         </p>
       </div>
-
       <p className="paragraph-regular mb-2 lg:mb-4">Social Networks:</p>
-      <ul className="flex gap-2 ">
-        <SocialItems styles="p-3 block" />
-      </ul>
+      <SocialItems styles="p-3 block" />
     </address>
   );
 }

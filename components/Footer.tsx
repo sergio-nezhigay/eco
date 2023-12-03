@@ -37,9 +37,10 @@ function Footer() {
               />
             </div>
           </ScrollLink>
-          <ul className="col-span-2 mx-auto flex gap-2 md:order-2 md:col-span-1 md:ml-3 md:mr-auto md:justify-items-start lg:ml-[149px]">
+
+          <div className="col-span-2 mx-auto md:order-2 md:col-span-1 md:ml-3 md:mr-auto md:justify-items-start lg:ml-[149px]">
             <SocialItems />
-          </ul>
+          </div>
         </div>
         <address className="not-italic">
           <ul className="paragraph-regular flex flex-col gap-4 text-center  md:grid md:grid-cols-[2fr,1fr,1fr] md:items-center md:gap-0">
