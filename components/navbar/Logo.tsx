@@ -2,6 +2,7 @@ import React from "react";
 import Image from "next/image";
 import Icon from "@/components/ui/Icon";
 import { Link as ScrollLink } from "react-scroll";
+// import style from "styled-jsx/style";
 
 interface ILogo {
   isScrolled?: boolean;
@@ -19,32 +20,13 @@ function Logo({ isScrolled = false }: ILogo) {
       duration={500}
       className="group flex cursor-pointer items-end gap-1"
     >
-      <Image
-        src="/assets/images/logo.png"
-        width={31}
-        height={18}
-        alt="logo"
-        className="mb-[7px]"
-      />
-      <div
-        className={`${
-          isScrolled ? "text-primary-300" : "text-primary-200"
-        } text-primary-200 group-hover:text-primary-300 group-active:text-primary-300`}
-      >
-        <Icon
-          name="name"
-          width={170}
-          height={40}
-          style="fill-current stroke-current"
-        />
-      </div>
-
-      <Image
-        src="/assets/images/slogan.png"
-        width={60}
-        height={18}
-        alt="logo"
-        className="mb-[7px]"
+      <Icon
+        name="logo-large"
+        width={269}
+        height={40}
+        style={`${
+          isScrolled ? "fill-primary-300" : "fill-primary-200"
+        } stroke-transparent group-hover:fill-primary-300 group-focus:fill-primary-300 transition`}
       />
     </ScrollLink>
   );

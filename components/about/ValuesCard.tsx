@@ -5,7 +5,7 @@ import Icon from "../ui/Icon";
 
 function ValuesCard({ description, iconId, title }: ICard) {
   return (
-    <div
+    <article
       key={iconId}
       className="col-span-2 min-h-[197px] bg-primary-500 p-3 md:col-span-1 lg:min-h-[339px] lg:px-6 lg:py-12"
     >
@@ -23,7 +23,7 @@ function ValuesCard({ description, iconId, title }: ICard) {
       <p className="paragraph-small text-justify lg:text-base lg:leading-[19.2px]">
         {description}
       </p>
-    </div>
+    </article>
   );
 }
 

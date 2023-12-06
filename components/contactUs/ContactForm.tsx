@@ -76,6 +76,7 @@ function ContactForm() {
             <Field
               fieldName="* Phone:"
               field={field}
+              isTel
               placeholder="380961234567"
               error={formState.errors.phone?.message}
             />
@@ -97,7 +98,7 @@ function ContactForm() {
         {successMessage && (
           <h2 className="mb-5 text-primary-300">{successMessage}</h2>
         )}
-        <button type="submit" className="ml-auto block p-0 pt-[2px]">
+        <button type="submit" className="group ml-auto block p-0 pt-[2px]">
           <SecondaryButton content="Send" />
         </button>
       </form>

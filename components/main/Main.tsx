@@ -36,7 +36,7 @@ function Main() {
               smooth={true}
               offset={-110}
               duration={500}
-              className="w-fit cursor-pointer "
+              className="group w-fit cursor-pointer "
             >
               <SecondaryButton content="Learn more" />
             </ScrollLink>
@@ -44,19 +44,21 @@ function Main() {
         </div>
 
         <Separator className="mb-6 bg-primary-300 md:mb-4 lg:mb-3" />
-        <div className="md:mb-10 md:flex md:items-center lg:mb-9 ">
-          <p className="paragraph-regular mb-2 text-center md:mb-0 md:mr-auto">
-            79005, Ukraine, Lvivstreet. Shota Rustaveli, 7
-          </p>
-          <div className="md:flex md:w-[342px] md:justify-between lg:w-[459px]">
-            <p className="paragraph-regular mb-9 text-center md:mb-0">
-              office@ecosolution.com
-            </p>
-            <p className="paragraph-regular hidden md:block ">
-              ecosolution © 2023
-            </p>
-          </div>
-        </div>
+        <address className="not-italic md:mb-10  lg:mb-9 ">
+          <ul className="md:flex md:items-center">
+            <li className="paragraph-regular mb-2 text-center md:mb-0 md:mr-auto">
+              79005, Ukraine, Lvivstreet. Shota Rustaveli, 7
+            </li>
+            <li className="md:flex md:w-[342px] md:justify-between lg:w-[459px]">
+              <p className="paragraph-regular mb-9 text-center md:mb-0">
+                office@ecosolution.com
+              </p>
+              <p className="paragraph-regular hidden md:block ">
+                ecosolution © 2023
+              </p>
+            </li>
+          </ul>
+        </address>
 
         <div className="relative h-[200px] w-full md:h-[348px] lg:h-[524px]">
           <Image

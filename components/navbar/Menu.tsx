@@ -18,10 +18,10 @@ import SocialItems from "../common/SocialItems";
 function Menu() {
   return (
     <Sheet>
-      <SheetTrigger aria-controls="span">
+      <SheetTrigger aria-controls="span" className="group">
         <span
           id="span"
-          className="flex-center h-[39px] w-[39px] rounded-full bg-primary-400 hover:bg-primary-300 "
+          className="flex-center h-[39px] w-[39px] rounded-full bg-primary-400 transition hover:bg-primary-300 group-focus:bg-primary-300"
         >
           <Icon
             name="menu"

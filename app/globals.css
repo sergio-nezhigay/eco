@@ -22,6 +22,15 @@ body {
   display: none;
 }
 
+input[type="tel"] {
+  -moz-appearance: textfield;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+}
+
 h1,
 h2,
 h3,
@@ -29,6 +38,7 @@ h4,
 h5,
 h6 {
   font-family: var(--font-oswald), sans-serif;
+  font-variant-numeric: tabular-nums;
 }
 
 @layer utilities {

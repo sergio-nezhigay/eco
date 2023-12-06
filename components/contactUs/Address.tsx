@@ -15,10 +15,10 @@ function Address() {
               className="group flex gap-2"
               href={`tel:${phone.replace(/\D/g, "")}`}
             >
-              <div className="flex group-hover:text-primary-300">
+              <div className="flex shrink-0 transition group-hover:text-primary-300 group-focus:text-primary-300">
                 <Icon name="call" style="fill-transparent stroke-current" />
               </div>
-              <p className="text-justify text-[20px] leading-6 tracking-m4 lg:text-[24px] lg:leading-7">
+              <p className="text-justify text-[20px] leading-6 tracking-m4 lg:text-[24px] lg:leading-7 ">
                 {phone}
               </p>
             </Link>
@@ -31,8 +31,8 @@ function Address() {
         className="group mb-6 flex items-center gap-2 lg:mb-8"
         href={`mailto:${CONTACT_INFO.email}`}
       >
-        <div className="flex group-hover:text-primary-300  ">
-          <Icon name="sms" style="fill-transparent stroke-current" />
+        <div className="flex transition group-hover:text-primary-300 group-focus:text-primary-300">
+          <Icon name="sms" style="fill-transparent stroke-current shrink-0" />
         </div>
         <p className="text-justify text-[20px] leading-6 tracking-m4 lg:text-[24px] lg:leading-7">
           {CONTACT_INFO.email}
@@ -41,7 +41,7 @@ function Address() {
 
       <p className="paragraph-regular mb-2 lg:mb-4">Address:</p>
       <div className="mb-6 flex items-center gap-2 lg:mb-8">
-        <Icon name="map" style="fill-transparent stroke-current" />
+        <Icon name="map" style="fill-transparent stroke-current shrink-0" />
         <p className="text-justify text-[20px] leading-6 tracking-m4 lg:text-[24px] lg:leading-7">
           {CONTACT_INFO.address}
         </p>

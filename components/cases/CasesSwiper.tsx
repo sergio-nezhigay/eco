@@ -14,7 +14,7 @@ import Icon from "../ui/Icon";
 function CasesSwiper({ handleSlideChange }: any) {
   const swiperButton = (rotation: number) => {
     return (
-      <div className="flex-center absolute h-[66px] w-[66px] rounded-full border border-primary-200  text-primary-200 hover:border-primary-300 hover:text-primary-300  lg:h-[84px] lg:w-[84px]">
+      <div className="flex-center absolute h-[66px] w-[66px] rounded-full border border-primary-200  text-primary-200 outline-black hover:border-primary-300 hover:text-primary-300 group-focus:border-primary-300 group-focus:text-primary-300 group-focus:outline group-focus:outline-1 lg:h-[84px] lg:w-[84px]">
         <Icon
           name="arrow-right-large"
           style={`${
@@ -58,8 +58,12 @@ function CasesSwiper({ handleSlideChange }: any) {
           </SwiperSlide>
         ))}
       </Swiper>
-      <div className="swiper-button-next">{swiperButton(0)}</div>
-      <div className="swiper-button-prev">{swiperButton(180)}</div>
+      <button className="swiper-button-next group focus:outline-0">
+        {swiperButton(0)}
+      </button>
+      <button className="swiper-button-prev group focus:outline-0">
+        {swiperButton(180)}
+      </button>
     </div>
   );
 }

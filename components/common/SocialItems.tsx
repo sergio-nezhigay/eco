@@ -13,7 +13,7 @@ function SocialItems({ styles = "" }) {
               target="_blank"
               aria-label={`Link to ${name}`}
               rel="noopener noreferrer"
-              className={`${styles} hover:text-primary-300 lg:p-0`}
+              className={`${styles} transition hover:text-primary-300 focus:text-primary-300 lg:p-0`}
             >
               <Icon
                 name={name.toLowerCase()}

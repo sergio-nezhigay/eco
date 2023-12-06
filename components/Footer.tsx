@@ -26,9 +26,9 @@ function Footer() {
             smooth={true}
             offset={-110}
             duration={500}
-            className=" cursor-pointer md:order-3 md:ml-auto lg:mr-0"
+            className=" group cursor-pointer md:order-3 md:ml-auto lg:mr-0"
           >
-            <div className="flex-center h-[32px] w-[32px] rounded-full bg-primary-300 hover:bg-primary-200 hover:text-primary-300 ">
+            <div className="flex-center h-[32px] w-[32px] rounded-full bg-primary-300 transition hover:bg-primary-200 hover:text-primary-300 group-focus:bg-primary-200 group-focus:text-primary-300">
               <Icon
                 name="arrow-right-large"
                 width={16}

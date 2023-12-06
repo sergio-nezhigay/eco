@@ -1,6 +1,7 @@
 import React from "react";
 import { FormItem, FormLabel, FormControl, FormMessage } from "../ui/form";
 import { Input } from "../ui/input";
+import { isNumber } from "util";
 
 interface FieldProps {
   fieldName: string;
@@ -9,6 +10,7 @@ interface FieldProps {
     value: string;
   };
   isTextarea?: boolean;
+  isTel?: boolean;
   placeholder?: string;
   error?: string | undefined;
 }
@@ -17,6 +19,7 @@ function Field({
   fieldName,
   field,
   isTextarea = false,
+  isTel = false,
   placeholder,
   error,
 }: FieldProps) {
@@ -40,13 +43,14 @@ function Field({
           <textarea
             {...field}
             placeholder={placeholder}
-            className="h-[147px] resize-none px-0 py-2 text-[18px] leading-[21.6px] tracking-m4 outline-0 ring-current ring-offset-2 placeholder:text-primary-700 focus:ring-2 lg:h-[161px] lg:py-3 lg:text-[20px] lg:leading-[24px]"
+            className="h-[147px] resize-none border-transparent px-0 py-2 text-[18px] leading-[21.6px] tracking-m4 outline-0 ring-current ring-offset-2 transition placeholder:text-primary-700 focus:ring-2 lg:h-[161px] lg:py-3 lg:text-[20px] lg:leading-[24px]"
           />
         ) : (
           <Input
             {...field}
             placeholder={placeholder}
-            className="h-[33px] px-0 py-2 text-[18px] leading-[21.6px] tracking-m4 outline-0 ring-current placeholder:text-primary-700  focus:ring-1 lg:h-[40px] lg:py-3 lg:text-[20px] lg:leading-[24px]"
+            type={isTel ? "number" : "text"}
+            className="h-[33px] border-transparent px-0 py-2 text-[18px] leading-[21.6px] tracking-m4 outline-0 ring-current  transition  placeholder:text-primary-700  focus:ring-1 lg:h-[40px] lg:py-3 lg:text-[20px] lg:leading-[24px]"
           />
         )}
       </FormControl>
