@@ -1,18 +1,7 @@
 import React from "react";
 import { FormItem, FormLabel, FormControl, FormMessage } from "../ui/form";
 import { Input } from "../ui/input";
-
-interface FieldProps {
-  fieldName: string;
-  field: {
-    onChange: React.ChangeEventHandler<HTMLInputElement | HTMLTextAreaElement>;
-    value: string;
-  };
-  isTextarea?: boolean;
-  isTel?: boolean;
-  placeholder?: string;
-  error?: string | undefined;
-}
+import { FieldProps } from "@/types";
 
 function Field({
   fieldName,

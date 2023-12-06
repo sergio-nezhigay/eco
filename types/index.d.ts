@@ -1,3 +1,5 @@
+import React from "react";
+
 export interface IMenuLink {
   id: string;
   label: string;
@@ -19,4 +21,26 @@ export interface ICases {
 export interface IFAQs {
   question: string;
   answer: string;
+}
+
+export interface PrimaryButtonProps {
+  content: string;
+  isHiddenInMobile?: true;
+  scrollTo: string;
+}
+
+export interface FieldProps {
+  fieldName: string;
+  field: {
+    onChange: React.ChangeEventHandler<HTMLInputElement | HTMLTextAreaElement>;
+    value: string;
+  };
+  isTextarea?: boolean;
+  isTel?: boolean;
+  placeholder?: string;
+  error?: string | undefined;
+}
+
+export interface ILogo {
+  isScrolled?: boolean;
 }

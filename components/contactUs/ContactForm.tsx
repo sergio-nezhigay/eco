@@ -25,7 +25,6 @@ function ContactForm() {
   useFormPersist("storageKey", {
     watch,
     setValue,
-    storage: window.localStorage, // default window.sessionStorage
     exclude: ["baz"],
   });
 

@@ -1,12 +1,7 @@
 import React from "react";
-import Image from "next/image";
 import Icon from "@/components/ui/Icon";
 import { Link as ScrollLink } from "react-scroll";
-// import style from "styled-jsx/style";
-
-interface ILogo {
-  isScrolled?: boolean;
-}
+import { ILogo } from "@/types";
 
 function Logo({ isScrolled = false }: ILogo) {
   return (
