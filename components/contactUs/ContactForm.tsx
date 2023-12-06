@@ -1,8 +1,9 @@
 "use client";
-import React from "react";
+import React, { useEffect } from "react";
 import * as z from "zod";
 import { zodResolver } from "@hookform/resolvers/zod";
 import { useForm } from "react-hook-form";
+import useFormPersist from "react-hook-form-persist";
 
 import formSchema from "./formSchema";
 import { Form, FormField } from "@/components/ui/form";
@@ -18,15 +19,15 @@ function ContactForm() {
 
   const form = useForm<z.infer<typeof formSchema>>({
     resolver: zodResolver(formSchema),
-    defaultValues: {
-      username: "",
-      email: "",
-      phone: "",
-      message: "",
-    },
   });
 
-  const { formState } = form;
+  const { formState, setValue, watch } = form;
+  useFormPersist("storageKey", {
+    watch,
+    setValue,
+    storage: window.localStorage, // default window.sessionStorage
+    exclude: ["baz"],
+  });
 
   async function onSubmit(values: z.infer<typeof formSchema>) {
     console.log("Form values are:", values);
